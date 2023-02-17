@@ -1,0 +1,43 @@
+default = all
+src_dir = .
+
+N_USEFUL_ELEMENTS ?= 64
+STRIDES ?= 1 4
+
+RISCV_PREFIX ?= riscv64-unknown-elf-
+RISCV_GCC ?= $(RISCV_PREFIX)gcc
+RISCV_GCC_OPTS ?= -DPREALLOCATE=0 -mcmodel=medany -static -std=gnu99 -O2 -ffast-math -fno-common -fno-builtin-printf -march=rv64im -mabi=lp64
+RISCV_LINK ?= $(RISCV_GCC) -T $(src_dir)/common/test.ld $(incs)
+RISCV_LINK_OPTS ?= -static -nostdlib -nostartfiles -lm -lgcc -T $(src_dir)/common/test.ld
+RISCV_OBJDUMP ?= $(RISCV_PREFIX)objdump --disassemble-all --disassemble-zeroes
+
+PYTHON ?= /usr/bin/python
+
+incs  += -I$(src_dir)/../env -I$(src_dir)/common $(addprefix -I$(src_dir)/, $(bmarks))
+objs  :=
+junk  :=
+
+bmark := stream
+
+#------------------------------------------------------------
+# Default
+
+all:
+	$(foreach n_useful_elements, $(N_USEFUL_ELEMENTS), \
+		$(foreach stride, $(STRIDES), \
+			$(PYTHON) $(src_dir)/$(bmark)/stream_gendata.py --num-accessed-elements=$(n_useful_elements) --stride=$(stride) --output-name=$(src_dir)/$(bmark)/dataset.h --data-type=short; \
+			$(RISCV_GCC) $(incs) $(RISCV_GCC_OPTS) -o $(bmark)-$(n_useful_elements)-stride-$(stride).riscv $(wildcard $(src_dir)/$(bmark)/*.c) $(wildcard $(src_dir)/common/*.c) $(wildcard $(src_dir)/common/*.S) $(RISCV_LINK_OPTS); \
+			$(RISCV_GCC) $(incs) $(RISCV_GCC_OPTS) -DNOVERIFY=1 -o $(bmark)-$(n_useful_elements)-stride-$(stride)-noverify.riscv $(wildcard $(src_dir)/$(bmark)/*.c) $(wildcard $(src_dir)/common/*.c) $(wildcard $(src_dir)/common/*.S) $(RISCV_LINK_OPTS); \
+			mv $(src_dir)/$(bmark)/dataset.h $(src_dir)/$(bmark)/dataset-$(n_useful_elements)-stride-$(stride).h; \
+			\
+			$(RISCV_OBJDUMP) $(bmark)-$(n_useful_elements)-stride-$(stride).riscv > $(bmark)-$(n_useful_elements)-stride-$(stride).riscv.dump; \
+			$(RISCV_OBJDUMP) $(bmark)-$(n_useful_elements)-stride-$(stride)-noverify.riscv > $(bmark)-$(n_useful_elements)-stride-$(stride)-noverify.riscv.dump; \
+		) \
+	)
+
+#------------------------------------------------------------
+# Clean up
+
+clean:
+	rm -rf $(src_dir)/$(bmark)-*.riscv* $(src_dir)/$(bmark)/dataset*.h
+
