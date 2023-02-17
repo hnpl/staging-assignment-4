@@ -32,6 +32,26 @@ class SingleCycleCPUTester extends CPUFlatSpec {
   }
 }
 
+class SingleCycleNonCombinCPUTester extends CPUFlatSpec {
+  behavior of "Single Cycle Non Combin CPU"
+  for ((group, tests) <- InstTests.tests) {
+    for (test <- tests) {
+      it should s"run $group ${test.binary}${test.extraName}" in {
+        CPUTesterDriver(test, "single-cycle-non-combin", "", "non-combinational", "non-combinational-port", 5) should be(true)
+      }
+    }
+  }
+}
+
+class SingleCycleNonCombinCPUMemTester extends CPUFlatSpec {
+  behavior of "Single Cycle Non Combin CPU"
+  for (test <- InstTests.memory ++ InstTests.memoryMultiCycle) {
+    it should s"run ${test.binary}${test.extraName}" in {
+      CPUTesterDriver(test, "single-cycle-non-combin", "", "non-combinational", "non-combinational-port", 5) should be(true)
+    }
+  }
+}
+
 /** Just like [[SingleCycleCPUTester]], but for the pipelined CPU */
 class PipelinedCPUTester extends CPUFlatSpec {
   behavior of "Pipelined CPU"
