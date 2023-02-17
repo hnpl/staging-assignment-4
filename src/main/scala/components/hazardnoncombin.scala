@@ -12,6 +12,7 @@ import chisel3._
  * Input:  idex_memread, true if the instruction in the ID/EX register is going to read from memory
  * Input:  idex_rd, the register number of the destination register for the instruction in the ID/EX register
  * Input:  exmem_taken, if true, then we are using the nextpc in the EX/MEM register, *not* pc+4.
+ * Input:  exmem_meminst, if true, the instruction at MEM stage is a memory instruction.
  * Input:  imem_ready, if true, then the Instruction Memory is ready for another instruction 
  * Input:  imem_good, if true, then an instruction was successfully retrieved and can unstall CPU
  * Input:  dmem_good, if true, then can unstall CPU for data memory
@@ -33,14 +34,15 @@ import chisel3._
  */
 class HazardUnitNonCombin extends Module {
   val io = IO(new Bundle {
-    val rs1          = Input(UInt(5.W))
-    val rs2          = Input(UInt(5.W))
-    val idex_memread = Input(Bool())
-    val idex_rd      = Input(UInt(5.W))
-    val exmem_taken  = Input(Bool())
-    val imem_ready   = Input(Bool())
-    val imem_good    = Input(Bool())
-    val dmem_good    = Input(Bool())
+    val rs1           = Input(UInt(5.W))
+    val rs2           = Input(UInt(5.W))
+    val idex_memread  = Input(Bool())
+    val idex_rd       = Input(UInt(5.W))
+    val exmem_taken   = Input(Bool())
+    val exmem_meminst = Input(Bool())
+    val imem_ready    = Input(Bool())
+    val imem_good     = Input(Bool())
+    val dmem_good     = Input(Bool())
 
     val pcfromtaken  = Output(Bool())
     val pcstall      = Output(Bool())
@@ -52,7 +54,6 @@ class HazardUnitNonCombin extends Module {
     val ex_mem_flush = Output(Bool())
     val mem_wb_stall = Output(Bool())
     val mem_wb_flush = Output(Bool())
-    val imem_valid   = Output(Bool())
   })
 
   // default
@@ -66,7 +67,6 @@ class HazardUnitNonCombin extends Module {
   io.ex_mem_flush := false.B
   io.mem_wb_stall := false.B
   io.mem_wb_flush := false.B
-  io.imem_valid   := true.B
 
   // Your code goes here
 
