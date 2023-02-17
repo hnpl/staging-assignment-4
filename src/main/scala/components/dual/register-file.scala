@@ -87,7 +87,7 @@ class DualIssueRegisterFile(implicit val conf: CPUConfig) extends Module {
   io.pipeB_readdata1 := regs(io.pipeB_readreg1)
   io.pipeB_readdata2 := regs(io.pipeB_readreg2)
 
-  if (conf.cpuType != "single-cycle") {
+  if (conf.cpuType != "single-cycle" && conf.cpuType != "single-cycle-non-combin") {
     // For the five-cycle and pipelined CPU forward the data through the register file
     when (io.pipeA_readreg1 === io.pipeB_writereg && io.pipeB_wen) {
       io.pipeA_readdata1 := io.pipeB_writedata

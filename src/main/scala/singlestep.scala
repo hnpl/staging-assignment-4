@@ -229,7 +229,9 @@ object singlestep {
       if (args(1).toInt == 0) {
         ("pipelined-non-combin", "combinational", "combinational-port", 0)
       } else {
-        ("pipelined-non-combin", "non-combinational", "non-combinational-port", args(1).toInt)
+        require(args(2) == "pipelined-non-combin" || args(2) == "single-cycle-non-combin",
+                s"Error: non-combin cpu is required for non-zero latency. Has: ${args(2)}")
+        (args(2), "non-combinational", "non-combinational-port", args(1).toInt)
       }
     } else { // Original single-step format
       (args(1), "combinational", "combinational-port", 0)
