@@ -10,6 +10,10 @@ class Request extends Bundle {
   val address      = UInt(64.W)
   val writedata    = UInt(64.W)
   val operation    = MemoryOperation()
+  val dirty        = Bool() // used in cache communication
+  val age          = UInt(32.W) // used in cache communication
+                                // age must be 0 for non-cache transactions as we use age as
+                                // an indicator to signify this is an eviction
 }
 
 // A bundle used for representing the memory's response to a memory read operation, which
@@ -17,6 +21,10 @@ class Request extends Bundle {
 class Response extends Bundle {
   // The 8-byte-wide block of data being returned by memory
   val data         = UInt(64.W)
+  val dirty        = Bool() // used in cache communication
+  val age          = UInt(32.W) // used in cache communication
+                                // age must be 0 for non-cache transactions as we use age as
+                                // an indicator to signify this is an eviction
 }
 
 /**
