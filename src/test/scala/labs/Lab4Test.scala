@@ -22,17 +22,9 @@ class SmallTestsTesterLab4 extends CPUFlatSpec {
   for ((group, tests) <- InstTests.tests) {
     for (test <- tests) {
       it should s"run $group ${test.binary}${test.extraName}" in {
-        CPUTesterDriver(test, "pipelined-dual-issue") should be(true)
+        CPUTesterDriver(test, "pipelined-non-combin", "",
+          "non-combinational", "non-combinational-port", 1) should be(true)
       }
-    }
-  }
-}
-
-class DualIssueForwardingTesterLab4 extends CPUFlatSpec {
-  behavior of "Dual-issue Pipelined CPU"
-  for (test <- InstTests.dualIssue) {
-    it should s"run test ${test.binary}${test.extraName}" in {
-      CPUTesterDriver(test, "pipelined-dual-issue") should be(true)
     }
   }
 }
@@ -41,16 +33,9 @@ class FullApplicationsTesterLab4 extends CPUFlatSpec {
   behavior of "Dual-issue Pipelined CPU"
   for (test <- InstTests.fullApplications) {
     it should s"run full application ${test.binary}${test.extraName}" in {
-      CPUTesterDriver(test, "pipelined-dual-issue") should be(true)
+      CPUTesterDriver(test, "pipelined-non-combin", "",
+        "non-combinational", "non-combinational-port", 1) should be(true)
     }
   }
 }
 
-class LoopsUnrolledFullApplicationsTesterLab4 extends CPUFlatSpec {
-  behavior of "Dual-issue Pipelined CPU"
-  for (test <- InstTests.loopsUnrolledFullApplications) {
-    it should s"run full application ${test.binary}${test.extraName}" in {
-      CPUTesterDriver(test, "pipelined-dual-issue") should be(true)
-    }
-  }
-}
