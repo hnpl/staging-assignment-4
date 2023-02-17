@@ -14,12 +14,14 @@ class Top(val conf: CPUConfig) extends Module
   val cpu  = Module(conf.getCPU())
   val mem  = Module(conf.getNewMem())
 
-  val imem = Module(conf.getIMemPort())
-  val dmem = Module(conf.getDMemPort())
+  val inst_bridge = Module(conf.getIMemBridge())
+  val data_bridge = Module(conf.getDMemBridge())
 
   conf.printConfig()
 
-  mem.wireMemory (imem, dmem)
-  cpu.io.imem <> imem.io.pipeline
-  cpu.io.dmem <> dmem.io.pipeline
+  cpu.io.imem <> inst_bridge.io.cpu_side_io
+  cpu.io.dmem <> data_bridge.io.cpu_side_io
+
+  mem.wireToInstBridge(inst_bridge)
+  mem.wireToDataBridge(data_bridge)
 }

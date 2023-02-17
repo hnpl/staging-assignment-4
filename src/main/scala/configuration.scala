@@ -54,6 +54,7 @@ class CPUConfig
     implicit val conf = this
     cpuType match {
       case "single-cycle" => new SingleCycleCPU
+      case "single-cycle-non-combin" => new SingleCycleNonCombinCPU
       case "pipelined" => new PipelinedCPU
       case "pipelined-bp" => new PipelinedCPUBP
       case "pipelined-non-combin" => new PipelinedNonCombinCPU
@@ -96,17 +97,17 @@ class CPUConfig
   /**
     * Create an instruction memory port
     *
-    * @return [[BaseIMemPort]] object
+    * @return [[BaseIMemBridge]] object
     */
-  def getIMemPort(): BaseIMemPort = {
+  def getIMemBridge(): BaseIMemBridge = {
     val f = new File(memFile)
     if (f.length == 0) {
       println("WARNING: No file will be loaded for data memory")
     }
 
     memPortType match {
-      case "combinational-port"     => new ICombinMemPort
-      case "non-combinational-port" => new INonCombinMemPort
+      case "combinational-port"     => new ICombinMemBridge
+      case "non-combinational-port" => new INonCombinMemBridge
       // case "non-combinational-cache" => new ICache
       case _ => throw new IllegalArgumentException("Must specify known instruction memory port type")
     }
@@ -115,19 +116,20 @@ class CPUConfig
   /**
     * Create a data memory port
     *
-    * @return [[BaseDMemPort]] object
+    * @return [[BaseDMemBridge]] object
     */
-  def getDMemPort(): BaseDMemPort = {
+  def getDMemBridge(): BaseDMemBridge = {
     val f = new File(memFile)
     if (f.length == 0) {
       println("WARNING: No file will be loaded for data memory")
     }
 
     memPortType match {
-      case "combinational-port"     => new DCombinMemPort
-      case "non-combinational-port" => new DNonCombinMemPort
+      case "combinational-port"     => new DCombinMemBridge
+      case "non-combinational-port" => new DNonCombinMemBridge
       // case "non-combinational-cache" => new DCache
       case _ => throw new IllegalArgumentException("Must specify known data memory port type")
     }
   }
+
 }
