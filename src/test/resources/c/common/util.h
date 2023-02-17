@@ -25,6 +25,49 @@ static int verify(int n, const volatile int* test, const int* verify)
   return 12345678;
 }
 
+static int verifyShort(int n, const volatile short* test, const short* verify)
+{
+  int i;
+  // Unrolled for faster verification
+  for (i = 0; i < n/2*2; i+=2)
+  {
+    short t0 = test[i], t1 = test[i+1];
+    short v0 = verify[i], v1 = verify[i+1];
+    if (t0 != v0) return i+1;
+    if (t1 != v1) return i+2;
+  }
+  if (n % 2 != 0 && test[n-1] != verify[n-1])
+    return n;
+  return 12345678;
+}
+
+static int verifyShortWithStride(int n, const int stride, const volatile short* test, const short* verify)
+{ 
+  for (int i = 0; i < n; i+=stride)
+  { 
+    short t0 = test[i];
+    short v0 = verify[i];
+    if (t0 != v0) return i+1;
+  }
+  return 12345678;
+}
+
+static int verifyLong(int n, const volatile long* test, const long* verify)
+{
+  int i;
+  // Unrolled for faster verification
+  for (i = 0; i < n/2*2; i+=2)
+  {
+    long t0 = test[i], t1 = test[i+1];
+    long v0 = verify[i], v1 = verify[i+1];
+    if (t0 != v0) return i+1;
+    if (t1 != v1) return i+2;
+  }
+  if (n % 2 != 0 && test[n-1] != verify[n-1])
+    return n;
+  return 12345678;
+}
+
 static int verifyDouble(int n, const volatile double* test, const double* verify)
 {
   int i;

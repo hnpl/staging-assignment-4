@@ -1,0 +1,41 @@
+default = all
+src_dir = .
+
+MATRIX_SIZES ?= 8 16 32
+
+RISCV_PREFIX ?= riscv64-unknown-elf-
+RISCV_GCC ?= $(RISCV_PREFIX)gcc
+RISCV_GCC_OPTS ?= -DPREALLOCATE=0 -mcmodel=medany -static -std=gnu99 -O2 -ffast-math -fno-common -fno-builtin-printf -march=rv64im -mabi=lp64
+RISCV_LINK ?= $(RISCV_GCC) -T $(src_dir)/common/test.ld $(incs)
+RISCV_LINK_OPTS ?= -static -nostdlib -nostartfiles -lm -lgcc -T $(src_dir)/common/test.ld
+RISCV_OBJDUMP ?= $(RISCV_PREFIX)objdump --disassemble-all --disassemble-zeroes
+
+PYTHON ?= /usr/bin/python
+
+incs  += -I$(src_dir)/../env -I$(src_dir)/common $(addprefix -I$(src_dir)/, $(bmarks))
+objs  :=
+junk  :=
+
+bmark := st-matmul
+
+#------------------------------------------------------------
+# Default
+
+all:
+	# this is a pretty bad receipt because it will recompile everything regardless whether the sources have changed
+	# however, the MATRIX_SIZES can be dynamically determined by user
+	$(foreach matrix_size, $(MATRIX_SIZES), \
+		$(PYTHON) $(src_dir)/$(bmark)/matmul_gendata.py --dim-size=$(matrix_size) --output-name=$(src_dir)/$(bmark)/dataset.h --data-type=int; \
+		$(RISCV_GCC) $(incs) $(RISCV_GCC_OPTS) -o $(bmark)-$(matrix_size).riscv $(wildcard $(src_dir)/$(bmark)/*.c) $(wildcard $(src_dir)/common/*.c) $(wildcard $(src_dir)/common/*.S) $(RISCV_LINK_OPTS); \
+		$(RISCV_GCC) $(incs) $(RISCV_GCC_OPTS) -funroll-loops -o $(bmark)-$(matrix_size)-loops-unrolled.riscv $(wildcard $(src_dir)/$(bmark)/*.c) $(wildcard $(src_dir)/common/*.c) $(wildcard $(src_dir)/common/*.S) $(RISCV_LINK_OPTS); \
+		mv $(src_dir)/$(bmark)/dataset.h $(src_dir)/$(bmark)/dataset-$(matrix_size).h; \
+		$(RISCV_OBJDUMP) $(bmark)-$(matrix_size).riscv > $(bmark)-$(matrix_size).riscv.dump; \
+		$(RISCV_OBJDUMP) $(bmark)-$(matrix_size)-loops-unrolled.riscv > $(bmark)-$(matrix_size)-loops-unrolled.riscv.dump; \
+	)
+
+#------------------------------------------------------------
+# Clean up
+
+clean:
+	rm -rf $(src_dir)/$(bmark)-*.riscv.* $(src_dir)/$(bmark)/dataset*.h
+

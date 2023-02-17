@@ -30,7 +30,7 @@ SECTIONS
     *(.text.finish)
   }
 
-  . += 0x100;
+  . += 0x1000;
   .data : {
     *(.data)
     *(.rodata)

@@ -90,12 +90,14 @@ class CPUTesterDriver(cpuType: String,
     // Note: the memory is a 32-bit memory
     val inst = Disassembler.disassemble(v.longValue())
     val hex = v.toInt.toHexString.reverse.padTo(8, '0').reverse
-    println(s"${pc.toString().padTo(8, ' ')}: ${inst.padTo(20, ' ')} (0x${hex})")
+    val pchex = pc.toInt.toHexString.reverse.padTo(8, ' ').reverse
+    println(s"${pchex}: ${inst.padTo(20, ' ')} (0x${hex})")
   }
 
   def dumpAllModules(): Unit = {
     val modules = conf.cpuType match {
       case "single-cycle" => SingleCycleCPUInfo.getModules()
+      case "single-cycle-non-combin" => SingleCycleNonCombinCPUInfo.getModules()
       case "pipelined" => PipelinedCPUInfo.getModules()
       case "pipelined-dual-issue" => PipelinedDualIssueCPUInfo.getModules()
       case "pipelined-non-combin" => PipelinedNonCombinCPUInfo.getModules()
@@ -115,6 +117,7 @@ class CPUTesterDriver(cpuType: String,
   def listModules(): Unit = {
     val modules = conf.cpuType match {
       case "single-cycle" => SingleCycleCPUInfo.getModules()
+      case "single-cycle-non-combin" => SingleCycleNonCombinCPUInfo.getModules()
       case "pipelined" => PipelinedCPUInfo.getModules()
       case "pipelined-dual-issue" =>PipelinedDualIssueCPUInfo.getModules()
       case "pipelined-non-combin" => PipelinedNonCombinCPUInfo.getModules()
@@ -256,6 +259,13 @@ class CPUTesterDriver(cpuType: String,
       simulator.step(1)
       cycle += 1
     }
+  }
+
+  def reportCacheStats(): Unit = {
+    println(s"l1_cache.stats_icache_accesses: ${simulator.peek("l1_cache.stats_icache_accesses")}")
+    println(s"l1_cache.stats_icache_hits: ${simulator.peek("l1_cache.stats_icache_hits")}")
+    println(s"l1_cache.stats_dcache_accesses: ${simulator.peek("l1_cache.stats_dcache_accesses")}")
+    println(s"l1_cache.stats_dcache_hits: ${simulator.peek("l1_cache.stats_dcache_hits")}")
   }
 }
 

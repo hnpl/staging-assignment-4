@@ -761,125 +761,125 @@ Disassembly of section .text:
 Disassembly of section .data:
 
 0000000000000c60 <input2_data>:
-     c60:	0001                	.2byte	0x1
+     c60:	0002                	.2byte	0x2
      c62:	0000                	.2byte	0x0
      c64:	0000                	.2byte	0x0
      c66:	0000                	.2byte	0x0
-     c68:	0001                	.2byte	0x1
+     c68:	0000                	.2byte	0x0
      c6a:	0000                	.2byte	0x0
-     c6c:	0000                	.2byte	0x0
+     c6c:	0002                	.2byte	0x2
      c6e:	0000                	.2byte	0x0
-     c70:	0000                	.2byte	0x0
+     c70:	0002                	.2byte	0x2
      c72:	0000                	.2byte	0x0
-     c74:	0002                	.2byte	0x2
+     c74:	0001                	.2byte	0x1
      c76:	0000                	.2byte	0x0
-     c78:	0002                	.2byte	0x2
+     c78:	0001                	.2byte	0x1
      c7a:	0000                	.2byte	0x0
-     c7c:	0001                	.2byte	0x1
+     c7c:	0000                	.2byte	0x0
      c7e:	0000                	.2byte	0x0
-     c80:	0000                	.2byte	0x0
+     c80:	0002                	.2byte	0x2
      c82:	0000                	.2byte	0x0
      c84:	0002                	.2byte	0x2
      c86:	0000                	.2byte	0x0
-     c88:	0000                	.2byte	0x0
+     c88:	0001                	.2byte	0x1
      c8a:	0000                	.2byte	0x0
      c8c:	0002                	.2byte	0x2
      c8e:	0000                	.2byte	0x0
-     c90:	0000                	.2byte	0x0
+     c90:	0002                	.2byte	0x2
      c92:	0000                	.2byte	0x0
-     c94:	0001                	.2byte	0x1
+     c94:	0000                	.2byte	0x0
      c96:	0000                	.2byte	0x0
      c98:	0000                	.2byte	0x0
      c9a:	0000                	.2byte	0x0
-     c9c:	0001                	.2byte	0x1
+     c9c:	0002                	.2byte	0x2
      c9e:	0000                	.2byte	0x0
-     ca0:	0002                	.2byte	0x2
+     ca0:	0000                	.2byte	0x0
      ca2:	0000                	.2byte	0x0
      ca4:	0002                	.2byte	0x2
      ca6:	0000                	.2byte	0x0
-     ca8:	0000                	.2byte	0x0
+     ca8:	0001                	.2byte	0x1
      caa:	0000                	.2byte	0x0
      cac:	0000                	.2byte	0x0
      cae:	0000                	.2byte	0x0
-     cb0:	0000                	.2byte	0x0
+     cb0:	0001                	.2byte	0x1
      cb2:	0000                	.2byte	0x0
-     cb4:	0000                	.2byte	0x0
+     cb4:	0001                	.2byte	0x1
      cb6:	0000                	.2byte	0x0
-     cb8:	0001                	.2byte	0x1
+     cb8:	0002                	.2byte	0x2
      cba:	0000                	.2byte	0x0
-     cbc:	0001                	.2byte	0x1
+     cbc:	0000                	.2byte	0x0
      cbe:	0000                	.2byte	0x0
      cc0:	0000                	.2byte	0x0
      cc2:	0000                	.2byte	0x0
-     cc4:	0001                	.2byte	0x1
+     cc4:	0002                	.2byte	0x2
      cc6:	0000                	.2byte	0x0
-     cc8:	0002                	.2byte	0x2
+     cc8:	0000                	.2byte	0x0
      cca:	0000                	.2byte	0x0
      ccc:	0000                	.2byte	0x0
      cce:	0000                	.2byte	0x0
-     cd0:	0001                	.2byte	0x1
+     cd0:	0000                	.2byte	0x0
      cd2:	0000                	.2byte	0x0
      cd4:	0001                	.2byte	0x1
      cd6:	0000                	.2byte	0x0
-     cd8:	0000                	.2byte	0x0
+     cd8:	0002                	.2byte	0x2
      cda:	0000                	.2byte	0x0
-     cdc:	0001                	.2byte	0x1
+     cdc:	0000                	.2byte	0x0
      cde:	0000                	.2byte	0x0
      ce0:	0002                	.2byte	0x2
      ce2:	0000                	.2byte	0x0
-     ce4:	0002                	.2byte	0x2
+     ce4:	0000                	.2byte	0x0
      ce6:	0000                	.2byte	0x0
-     ce8:	0001                	.2byte	0x1
+     ce8:	0000                	.2byte	0x0
      cea:	0000                	.2byte	0x0
      cec:	0002                	.2byte	0x2
      cee:	0000                	.2byte	0x0
-     cf0:	0002                	.2byte	0x2
+     cf0:	0001                	.2byte	0x1
      cf2:	0000                	.2byte	0x0
-     cf4:	0001                	.2byte	0x1
+     cf4:	0002                	.2byte	0x2
      cf6:	0000                	.2byte	0x0
-     cf8:	0001                	.2byte	0x1
+     cf8:	0000                	.2byte	0x0
      cfa:	0000                	.2byte	0x0
-     cfc:	0000                	.2byte	0x0
+     cfc:	0001                	.2byte	0x1
      cfe:	0000                	.2byte	0x0
-     d00:	0000                	.2byte	0x0
+     d00:	0002                	.2byte	0x2
      d02:	0000                	.2byte	0x0
-     d04:	0001                	.2byte	0x1
+     d04:	0000                	.2byte	0x0
      d06:	0000                	.2byte	0x0
-     d08:	0000                	.2byte	0x0
+     d08:	0001                	.2byte	0x1
      d0a:	0000                	.2byte	0x0
-     d0c:	0002                	.2byte	0x2
+     d0c:	0000                	.2byte	0x0
      d0e:	0000                	.2byte	0x0
      d10:	0002                	.2byte	0x2
      d12:	0000                	.2byte	0x0
-     d14:	0002                	.2byte	0x2
+     d14:	0001                	.2byte	0x1
      d16:	0000                	.2byte	0x0
-     d18:	0002                	.2byte	0x2
+     d18:	0001                	.2byte	0x1
      d1a:	0000                	.2byte	0x0
-     d1c:	0002                	.2byte	0x2
+     d1c:	0000                	.2byte	0x0
      d1e:	0000                	.2byte	0x0
      d20:	0000                	.2byte	0x0
      d22:	0000                	.2byte	0x0
      d24:	0000                	.2byte	0x0
      d26:	0000                	.2byte	0x0
-     d28:	0000                	.2byte	0x0
+     d28:	0001                	.2byte	0x1
      d2a:	0000                	.2byte	0x0
-     d2c:	0000                	.2byte	0x0
+     d2c:	0001                	.2byte	0x1
      d2e:	0000                	.2byte	0x0
-     d30:	0002                	.2byte	0x2
+     d30:	0000                	.2byte	0x0
      d32:	0000                	.2byte	0x0
-     d34:	0000                	.2byte	0x0
+     d34:	0001                	.2byte	0x1
      d36:	0000                	.2byte	0x0
      d38:	0002                	.2byte	0x2
      d3a:	0000                	.2byte	0x0
-     d3c:	0000                	.2byte	0x0
+     d3c:	0002                	.2byte	0x2
      d3e:	0000                	.2byte	0x0
-     d40:	0001                	.2byte	0x1
+     d40:	0000                	.2byte	0x0
      d42:	0000                	.2byte	0x0
-     d44:	0002                	.2byte	0x2
+     d44:	0000                	.2byte	0x0
      d46:	0000                	.2byte	0x0
-     d48:	0002                	.2byte	0x2
+     d48:	0000                	.2byte	0x0
      d4a:	0000                	.2byte	0x0
-     d4c:	0002                	.2byte	0x2
+     d4c:	0001                	.2byte	0x1
      d4e:	0000                	.2byte	0x0
      d50:	0000                	.2byte	0x0
      d52:	0000                	.2byte	0x0
@@ -887,151 +887,151 @@ Disassembly of section .data:
      d56:	0000                	.2byte	0x0
      d58:	0000                	.2byte	0x0
      d5a:	0000                	.2byte	0x0
-     d5c:	0000                	.2byte	0x0
+     d5c:	0001                	.2byte	0x1
      d5e:	0000                	.2byte	0x0
-     d60:	0001                	.2byte	0x1
+     d60:	0002                	.2byte	0x2
      d62:	0000                	.2byte	0x0
-     d64:	0002                	.2byte	0x2
+     d64:	0001                	.2byte	0x1
      d66:	0000                	.2byte	0x0
-     d68:	0000                	.2byte	0x0
+     d68:	0002                	.2byte	0x2
      d6a:	0000                	.2byte	0x0
-     d6c:	0000                	.2byte	0x0
+     d6c:	0001                	.2byte	0x1
      d6e:	0000                	.2byte	0x0
-     d70:	0001                	.2byte	0x1
+     d70:	0002                	.2byte	0x2
      d72:	0000                	.2byte	0x0
-     d74:	0002                	.2byte	0x2
+     d74:	0000                	.2byte	0x0
      d76:	0000                	.2byte	0x0
      d78:	0000                	.2byte	0x0
      d7a:	0000                	.2byte	0x0
-     d7c:	0002                	.2byte	0x2
+     d7c:	0000                	.2byte	0x0
      d7e:	0000                	.2byte	0x0
-     d80:	0000                	.2byte	0x0
+     d80:	0001                	.2byte	0x1
      d82:	0000                	.2byte	0x0
      d84:	0001                	.2byte	0x1
      d86:	0000                	.2byte	0x0
-     d88:	0001                	.2byte	0x1
+     d88:	0002                	.2byte	0x2
      d8a:	0000                	.2byte	0x0
-     d8c:	0002                	.2byte	0x2
+     d8c:	0001                	.2byte	0x1
      d8e:	0000                	.2byte	0x0
-     d90:	0001                	.2byte	0x1
+     d90:	0000                	.2byte	0x0
      d92:	0000                	.2byte	0x0
      d94:	0002                	.2byte	0x2
      d96:	0000                	.2byte	0x0
      d98:	0000                	.2byte	0x0
      d9a:	0000                	.2byte	0x0
-     d9c:	0001                	.2byte	0x1
+     d9c:	0000                	.2byte	0x0
      d9e:	0000                	.2byte	0x0
-     da0:	0001                	.2byte	0x1
+     da0:	0000                	.2byte	0x0
      da2:	0000                	.2byte	0x0
-     da4:	0001                	.2byte	0x1
+     da4:	0002                	.2byte	0x2
      da6:	0000                	.2byte	0x0
-     da8:	0000                	.2byte	0x0
+     da8:	0002                	.2byte	0x2
      daa:	0000                	.2byte	0x0
      dac:	0000                	.2byte	0x0
      dae:	0000                	.2byte	0x0
      db0:	0001                	.2byte	0x1
      db2:	0000                	.2byte	0x0
-     db4:	0000                	.2byte	0x0
+     db4:	0001                	.2byte	0x1
      db6:	0000                	.2byte	0x0
-     db8:	0000                	.2byte	0x0
+     db8:	0002                	.2byte	0x2
      dba:	0000                	.2byte	0x0
-     dbc:	0001                	.2byte	0x1
+     dbc:	0002                	.2byte	0x2
      dbe:	0000                	.2byte	0x0
-     dc0:	0000                	.2byte	0x0
+     dc0:	0002                	.2byte	0x2
      dc2:	0000                	.2byte	0x0
-     dc4:	0002                	.2byte	0x2
+     dc4:	0000                	.2byte	0x0
      dc6:	0000                	.2byte	0x0
      dc8:	0001                	.2byte	0x1
      dca:	0000                	.2byte	0x0
-     dcc:	0001                	.2byte	0x1
+     dcc:	0002                	.2byte	0x2
      dce:	0000                	.2byte	0x0
-     dd0:	0000                	.2byte	0x0
+     dd0:	0001                	.2byte	0x1
      dd2:	0000                	.2byte	0x0
-     dd4:	0000                	.2byte	0x0
+     dd4:	0001                	.2byte	0x1
      dd6:	0000                	.2byte	0x0
      dd8:	0001                	.2byte	0x1
      dda:	0000                	.2byte	0x0
-     ddc:	0000                	.2byte	0x0
+     ddc:	0002                	.2byte	0x2
      dde:	0000                	.2byte	0x0
-     de0:	0000                	.2byte	0x0
+     de0:	0001                	.2byte	0x1
      de2:	0000                	.2byte	0x0
-     de4:	0002                	.2byte	0x2
+     de4:	0000                	.2byte	0x0
      de6:	0000                	.2byte	0x0
-     de8:	0000                	.2byte	0x0
+     de8:	0001                	.2byte	0x1
      dea:	0000                	.2byte	0x0
      dec:	0002                	.2byte	0x2
      dee:	0000                	.2byte	0x0
      df0:	0000                	.2byte	0x0
      df2:	0000                	.2byte	0x0
-     df4:	0001                	.2byte	0x1
+     df4:	0002                	.2byte	0x2
      df6:	0000                	.2byte	0x0
-     df8:	0002                	.2byte	0x2
+     df8:	0000                	.2byte	0x0
      dfa:	0000                	.2byte	0x0
      dfc:	0000                	.2byte	0x0
      dfe:	0000                	.2byte	0x0
      e00:	0002                	.2byte	0x2
      e02:	0000                	.2byte	0x0
-     e04:	0000                	.2byte	0x0
+     e04:	0001                	.2byte	0x1
      e06:	0000                	.2byte	0x0
      e08:	0000                	.2byte	0x0
      e0a:	0000                	.2byte	0x0
      e0c:	0001                	.2byte	0x1
      e0e:	0000                	.2byte	0x0
-     e10:	0000                	.2byte	0x0
+     e10:	0001                	.2byte	0x1
      e12:	0000                	.2byte	0x0
-     e14:	0000                	.2byte	0x0
+     e14:	0002                	.2byte	0x2
      e16:	0000                	.2byte	0x0
-     e18:	0001                	.2byte	0x1
+     e18:	0002                	.2byte	0x2
      e1a:	0000                	.2byte	0x0
      e1c:	0000                	.2byte	0x0
      e1e:	0000                	.2byte	0x0
      e20:	0002                	.2byte	0x2
      e22:	0000                	.2byte	0x0
-     e24:	0000                	.2byte	0x0
+     e24:	0001                	.2byte	0x1
      e26:	0000                	.2byte	0x0
-     e28:	0000                	.2byte	0x0
+     e28:	0001                	.2byte	0x1
      e2a:	0000                	.2byte	0x0
-     e2c:	0000                	.2byte	0x0
+     e2c:	0001                	.2byte	0x1
      e2e:	0000                	.2byte	0x0
      e30:	0001                	.2byte	0x1
      e32:	0000                	.2byte	0x0
-     e34:	0001                	.2byte	0x1
+     e34:	0000                	.2byte	0x0
      e36:	0000                	.2byte	0x0
-     e38:	0002                	.2byte	0x2
+     e38:	0000                	.2byte	0x0
      e3a:	0000                	.2byte	0x0
-     e3c:	0000                	.2byte	0x0
+     e3c:	0001                	.2byte	0x1
      e3e:	0000                	.2byte	0x0
-     e40:	0001                	.2byte	0x1
+     e40:	0000                	.2byte	0x0
      e42:	0000                	.2byte	0x0
-     e44:	0000                	.2byte	0x0
+     e44:	0001                	.2byte	0x1
      e46:	0000                	.2byte	0x0
      e48:	0000                	.2byte	0x0
      e4a:	0000                	.2byte	0x0
-     e4c:	0001                	.2byte	0x1
+     e4c:	0000                	.2byte	0x0
      e4e:	0000                	.2byte	0x0
-     e50:	0001                	.2byte	0x1
+     e50:	0002                	.2byte	0x2
      e52:	0000                	.2byte	0x0
-     e54:	0002                	.2byte	0x2
+     e54:	0000                	.2byte	0x0
      e56:	0000                	.2byte	0x0
-     e58:	0001                	.2byte	0x1
+     e58:	0002                	.2byte	0x2
      e5a:	0000                	.2byte	0x0
-     e5c:	0000                	.2byte	0x0
+     e5c:	0002                	.2byte	0x2
      e5e:	0000                	.2byte	0x0
-     e60:	0002                	.2byte	0x2
+     e60:	0000                	.2byte	0x0
      e62:	0000                	.2byte	0x0
-     e64:	0000                	.2byte	0x0
+     e64:	0002                	.2byte	0x2
      e66:	0000                	.2byte	0x0
      e68:	0002                	.2byte	0x2
      e6a:	0000                	.2byte	0x0
      e6c:	0001                	.2byte	0x1
      e6e:	0000                	.2byte	0x0
-     e70:	0001                	.2byte	0x1
+     e70:	0002                	.2byte	0x2
      e72:	0000                	.2byte	0x0
      e74:	0002                	.2byte	0x2
      e76:	0000                	.2byte	0x0
-     e78:	0001                	.2byte	0x1
+     e78:	0002                	.2byte	0x2
      e7a:	0000                	.2byte	0x0
-     e7c:	0002                	.2byte	0x2
+     e7c:	0000                	.2byte	0x0
      e7e:	0000                	.2byte	0x0
      e80:	0001                	.2byte	0x1
      e82:	0000                	.2byte	0x0
@@ -1041,191 +1041,191 @@ Disassembly of section .data:
      e8a:	0000                	.2byte	0x0
      e8c:	0000                	.2byte	0x0
      e8e:	0000                	.2byte	0x0
-     e90:	0002                	.2byte	0x2
+     e90:	0001                	.2byte	0x1
      e92:	0000                	.2byte	0x0
-     e94:	0000                	.2byte	0x0
+     e94:	0002                	.2byte	0x2
      e96:	0000                	.2byte	0x0
      e98:	0001                	.2byte	0x1
      e9a:	0000                	.2byte	0x0
      e9c:	0002                	.2byte	0x2
      e9e:	0000                	.2byte	0x0
-     ea0:	0002                	.2byte	0x2
+     ea0:	0001                	.2byte	0x1
      ea2:	0000                	.2byte	0x0
-     ea4:	0000                	.2byte	0x0
+     ea4:	0001                	.2byte	0x1
      ea6:	0000                	.2byte	0x0
      ea8:	0002                	.2byte	0x2
      eaa:	0000                	.2byte	0x0
-     eac:	0002                	.2byte	0x2
+     eac:	0000                	.2byte	0x0
      eae:	0000                	.2byte	0x0
      eb0:	0001                	.2byte	0x1
      eb2:	0000                	.2byte	0x0
      eb4:	0002                	.2byte	0x2
      eb6:	0000                	.2byte	0x0
-     eb8:	0001                	.2byte	0x1
+     eb8:	0000                	.2byte	0x0
      eba:	0000                	.2byte	0x0
-     ebc:	0001                	.2byte	0x1
+     ebc:	0000                	.2byte	0x0
      ebe:	0000                	.2byte	0x0
      ec0:	0001                	.2byte	0x1
      ec2:	0000                	.2byte	0x0
      ec4:	0001                	.2byte	0x1
      ec6:	0000                	.2byte	0x0
-     ec8:	0002                	.2byte	0x2
+     ec8:	0000                	.2byte	0x0
      eca:	0000                	.2byte	0x0
-     ecc:	0001                	.2byte	0x1
+     ecc:	0002                	.2byte	0x2
      ece:	0000                	.2byte	0x0
-     ed0:	0001                	.2byte	0x1
+     ed0:	0002                	.2byte	0x2
      ed2:	0000                	.2byte	0x0
      ed4:	0001                	.2byte	0x1
      ed6:	0000                	.2byte	0x0
-     ed8:	0000                	.2byte	0x0
+     ed8:	0001                	.2byte	0x1
      eda:	0000                	.2byte	0x0
      edc:	0002                	.2byte	0x2
      ede:	0000                	.2byte	0x0
-     ee0:	0000                	.2byte	0x0
+     ee0:	0002                	.2byte	0x2
      ee2:	0000                	.2byte	0x0
-     ee4:	0001                	.2byte	0x1
+     ee4:	0002                	.2byte	0x2
      ee6:	0000                	.2byte	0x0
-     ee8:	0000                	.2byte	0x0
+     ee8:	0001                	.2byte	0x1
      eea:	0000                	.2byte	0x0
      eec:	0002                	.2byte	0x2
      eee:	0000                	.2byte	0x0
-     ef0:	0001                	.2byte	0x1
+     ef0:	0002                	.2byte	0x2
      ef2:	0000                	.2byte	0x0
      ef4:	0000                	.2byte	0x0
      ef6:	0000                	.2byte	0x0
      ef8:	0001                	.2byte	0x1
      efa:	0000                	.2byte	0x0
-     efc:	0000                	.2byte	0x0
+     efc:	0001                	.2byte	0x1
      efe:	0000                	.2byte	0x0
-     f00:	0001                	.2byte	0x1
+     f00:	0000                	.2byte	0x0
      f02:	0000                	.2byte	0x0
-     f04:	0002                	.2byte	0x2
+     f04:	0001                	.2byte	0x1
      f06:	0000                	.2byte	0x0
-     f08:	0000                	.2byte	0x0
+     f08:	0001                	.2byte	0x1
      f0a:	0000                	.2byte	0x0
      f0c:	0000                	.2byte	0x0
      f0e:	0000                	.2byte	0x0
-     f10:	0002                	.2byte	0x2
+     f10:	0000                	.2byte	0x0
      f12:	0000                	.2byte	0x0
      f14:	0000                	.2byte	0x0
      f16:	0000                	.2byte	0x0
-     f18:	0001                	.2byte	0x1
+     f18:	0002                	.2byte	0x2
      f1a:	0000                	.2byte	0x0
-     f1c:	0000                	.2byte	0x0
+     f1c:	0002                	.2byte	0x2
      f1e:	0000                	.2byte	0x0
      f20:	0002                	.2byte	0x2
      f22:	0000                	.2byte	0x0
      f24:	0002                	.2byte	0x2
      f26:	0000                	.2byte	0x0
-     f28:	0001                	.2byte	0x1
+     f28:	0002                	.2byte	0x2
      f2a:	0000                	.2byte	0x0
-     f2c:	0000                	.2byte	0x0
+     f2c:	0002                	.2byte	0x2
      f2e:	0000                	.2byte	0x0
-     f30:	0000                	.2byte	0x0
+     f30:	0001                	.2byte	0x1
      f32:	0000                	.2byte	0x0
-     f34:	0001                	.2byte	0x1
+     f34:	0002                	.2byte	0x2
      f36:	0000                	.2byte	0x0
-     f38:	0000                	.2byte	0x0
+     f38:	0001                	.2byte	0x1
      f3a:	0000                	.2byte	0x0
-     f3c:	0001                	.2byte	0x1
+     f3c:	0002                	.2byte	0x2
      f3e:	0000                	.2byte	0x0
-     f40:	0002                	.2byte	0x2
+     f40:	0001                	.2byte	0x1
      f42:	0000                	.2byte	0x0
-     f44:	0001                	.2byte	0x1
+     f44:	0002                	.2byte	0x2
      f46:	0000                	.2byte	0x0
-     f48:	0002                	.2byte	0x2
+     f48:	0000                	.2byte	0x0
      f4a:	0000                	.2byte	0x0
      f4c:	0002                	.2byte	0x2
      f4e:	0000                	.2byte	0x0
-     f50:	0000                	.2byte	0x0
+     f50:	0001                	.2byte	0x1
      f52:	0000                	.2byte	0x0
-     f54:	0001                	.2byte	0x1
+     f54:	0002                	.2byte	0x2
      f56:	0000                	.2byte	0x0
-     f58:	0001                	.2byte	0x1
+     f58:	0000                	.2byte	0x0
      f5a:	0000                	.2byte	0x0
      f5c:	0000                	.2byte	0x0
      f5e:	0000                	.2byte	0x0
      f60:	0001                	.2byte	0x1
      f62:	0000                	.2byte	0x0
-     f64:	0002                	.2byte	0x2
+     f64:	0000                	.2byte	0x0
      f66:	0000                	.2byte	0x0
-     f68:	0000                	.2byte	0x0
+     f68:	0001                	.2byte	0x1
      f6a:	0000                	.2byte	0x0
      f6c:	0002                	.2byte	0x2
      f6e:	0000                	.2byte	0x0
-     f70:	0000                	.2byte	0x0
+     f70:	0002                	.2byte	0x2
      f72:	0000                	.2byte	0x0
      f74:	0002                	.2byte	0x2
      f76:	0000                	.2byte	0x0
-     f78:	0001                	.2byte	0x1
+     f78:	0000                	.2byte	0x0
      f7a:	0000                	.2byte	0x0
      f7c:	0001                	.2byte	0x1
      f7e:	0000                	.2byte	0x0
-     f80:	0000                	.2byte	0x0
+     f80:	0001                	.2byte	0x1
      f82:	0000                	.2byte	0x0
      f84:	0001                	.2byte	0x1
      f86:	0000                	.2byte	0x0
-     f88:	0001                	.2byte	0x1
+     f88:	0002                	.2byte	0x2
      f8a:	0000                	.2byte	0x0
-     f8c:	0002                	.2byte	0x2
+     f8c:	0001                	.2byte	0x1
      f8e:	0000                	.2byte	0x0
-     f90:	0001                	.2byte	0x1
+     f90:	0002                	.2byte	0x2
      f92:	0000                	.2byte	0x0
-     f94:	0002                	.2byte	0x2
+     f94:	0001                	.2byte	0x1
      f96:	0000                	.2byte	0x0
-     f98:	0001                	.2byte	0x1
+     f98:	0002                	.2byte	0x2
      f9a:	0000                	.2byte	0x0
-     f9c:	0002                	.2byte	0x2
+     f9c:	0001                	.2byte	0x1
      f9e:	0000                	.2byte	0x0
      fa0:	0000                	.2byte	0x0
      fa2:	0000                	.2byte	0x0
-     fa4:	0000                	.2byte	0x0
+     fa4:	0001                	.2byte	0x1
      fa6:	0000                	.2byte	0x0
-     fa8:	0000                	.2byte	0x0
+     fa8:	0001                	.2byte	0x1
      faa:	0000                	.2byte	0x0
-     fac:	0001                	.2byte	0x1
+     fac:	0000                	.2byte	0x0
      fae:	0000                	.2byte	0x0
-     fb0:	0000                	.2byte	0x0
+     fb0:	0002                	.2byte	0x2
      fb2:	0000                	.2byte	0x0
      fb4:	0000                	.2byte	0x0
      fb6:	0000                	.2byte	0x0
-     fb8:	0001                	.2byte	0x1
+     fb8:	0002                	.2byte	0x2
      fba:	0000                	.2byte	0x0
      fbc:	0000                	.2byte	0x0
      fbe:	0000                	.2byte	0x0
-     fc0:	0002                	.2byte	0x2
+     fc0:	0000                	.2byte	0x0
      fc2:	0000                	.2byte	0x0
-     fc4:	0000                	.2byte	0x0
+     fc4:	0002                	.2byte	0x2
      fc6:	0000                	.2byte	0x0
-     fc8:	0000                	.2byte	0x0
+     fc8:	0002                	.2byte	0x2
      fca:	0000                	.2byte	0x0
-     fcc:	0002                	.2byte	0x2
+     fcc:	0001                	.2byte	0x1
      fce:	0000                	.2byte	0x0
-     fd0:	0002                	.2byte	0x2
+     fd0:	0000                	.2byte	0x0
      fd2:	0000                	.2byte	0x0
-     fd4:	0002                	.2byte	0x2
+     fd4:	0000                	.2byte	0x0
      fd6:	0000                	.2byte	0x0
-     fd8:	0001                	.2byte	0x1
+     fd8:	0000                	.2byte	0x0
      fda:	0000                	.2byte	0x0
-     fdc:	0002                	.2byte	0x2
+     fdc:	0001                	.2byte	0x1
      fde:	0000                	.2byte	0x0
-     fe0:	0000                	.2byte	0x0
+     fe0:	0001                	.2byte	0x1
      fe2:	0000                	.2byte	0x0
      fe4:	0000                	.2byte	0x0
      fe6:	0000                	.2byte	0x0
-     fe8:	0001                	.2byte	0x1
+     fe8:	0002                	.2byte	0x2
      fea:	0000                	.2byte	0x0
-     fec:	0001                	.2byte	0x1
+     fec:	0002                	.2byte	0x2
      fee:	0000                	.2byte	0x0
-     ff0:	0000                	.2byte	0x0
+     ff0:	0002                	.2byte	0x2
      ff2:	0000                	.2byte	0x0
-     ff4:	0001                	.2byte	0x1
+     ff4:	0000                	.2byte	0x0
      ff6:	0000                	.2byte	0x0
-     ff8:	0002                	.2byte	0x2
+     ff8:	0001                	.2byte	0x1
      ffa:	0000                	.2byte	0x0
      ffc:	0001                	.2byte	0x1
      ffe:	0000                	.2byte	0x0
-    1000:	0000                	.2byte	0x0
+    1000:	0002                	.2byte	0x2
     1002:	0000                	.2byte	0x0
     1004:	0001                	.2byte	0x1
     1006:	0000                	.2byte	0x0
@@ -1233,7 +1233,7 @@ Disassembly of section .data:
     100a:	0000                	.2byte	0x0
     100c:	0002                	.2byte	0x2
     100e:	0000                	.2byte	0x0
-    1010:	0002                	.2byte	0x2
+    1010:	0001                	.2byte	0x1
     1012:	0000                	.2byte	0x0
     1014:	0002                	.2byte	0x2
     1016:	0000                	.2byte	0x0
@@ -1241,27 +1241,27 @@ Disassembly of section .data:
     101a:	0000                	.2byte	0x0
     101c:	0002                	.2byte	0x2
     101e:	0000                	.2byte	0x0
-    1020:	0000                	.2byte	0x0
+    1020:	0001                	.2byte	0x1
     1022:	0000                	.2byte	0x0
     1024:	0000                	.2byte	0x0
     1026:	0000                	.2byte	0x0
     1028:	0001                	.2byte	0x1
     102a:	0000                	.2byte	0x0
-    102c:	0002                	.2byte	0x2
+    102c:	0001                	.2byte	0x1
     102e:	0000                	.2byte	0x0
     1030:	0000                	.2byte	0x0
     1032:	0000                	.2byte	0x0
-    1034:	0002                	.2byte	0x2
+    1034:	0000                	.2byte	0x0
     1036:	0000                	.2byte	0x0
-    1038:	0001                	.2byte	0x1
+    1038:	0000                	.2byte	0x0
     103a:	0000                	.2byte	0x0
-    103c:	0002                	.2byte	0x2
+    103c:	0001                	.2byte	0x1
     103e:	0000                	.2byte	0x0
-    1040:	0001                	.2byte	0x1
+    1040:	0002                	.2byte	0x2
     1042:	0000                	.2byte	0x0
-    1044:	0002                	.2byte	0x2
+    1044:	0000                	.2byte	0x0
     1046:	0000                	.2byte	0x0
-    1048:	0002                	.2byte	0x2
+    1048:	0000                	.2byte	0x0
     104a:	0000                	.2byte	0x0
     104c:	0000                	.2byte	0x0
     104e:	0000                	.2byte	0x0
@@ -1269,9 +1269,9 @@ Disassembly of section .data:
     1052:	0000                	.2byte	0x0
     1054:	0000                	.2byte	0x0
     1056:	0000                	.2byte	0x0
-    1058:	0000                	.2byte	0x0
+    1058:	0001                	.2byte	0x1
     105a:	0000                	.2byte	0x0
-    105c:	0002                	.2byte	0x2
+    105c:	0000                	.2byte	0x0
     105e:	0000                	.2byte	0x0
 
 0000000000001060 <input1_data>:
@@ -1281,261 +1281,261 @@ Disassembly of section .data:
     1066:	0000                	.2byte	0x0
     1068:	0001                	.2byte	0x1
     106a:	0000                	.2byte	0x0
-    106c:	0001                	.2byte	0x1
+    106c:	0000                	.2byte	0x0
     106e:	0000                	.2byte	0x0
-    1070:	0002                	.2byte	0x2
+    1070:	0001                	.2byte	0x1
     1072:	0000                	.2byte	0x0
-    1074:	0000                	.2byte	0x0
+    1074:	0002                	.2byte	0x2
     1076:	0000                	.2byte	0x0
-    1078:	0001                	.2byte	0x1
+    1078:	0000                	.2byte	0x0
     107a:	0000                	.2byte	0x0
-    107c:	0000                	.2byte	0x0
+    107c:	0001                	.2byte	0x1
     107e:	0000                	.2byte	0x0
-    1080:	0000                	.2byte	0x0
+    1080:	0001                	.2byte	0x1
     1082:	0000                	.2byte	0x0
-    1084:	0002                	.2byte	0x2
+    1084:	0001                	.2byte	0x1
     1086:	0000                	.2byte	0x0
-    1088:	0002                	.2byte	0x2
+    1088:	0001                	.2byte	0x1
     108a:	0000                	.2byte	0x0
-    108c:	0000                	.2byte	0x0
+    108c:	0002                	.2byte	0x2
     108e:	0000                	.2byte	0x0
-    1090:	0000                	.2byte	0x0
+    1090:	0002                	.2byte	0x2
     1092:	0000                	.2byte	0x0
-    1094:	0001                	.2byte	0x1
+    1094:	0002                	.2byte	0x2
     1096:	0000                	.2byte	0x0
-    1098:	0000                	.2byte	0x0
+    1098:	0002                	.2byte	0x2
     109a:	0000                	.2byte	0x0
-    109c:	0002                	.2byte	0x2
+    109c:	0000                	.2byte	0x0
     109e:	0000                	.2byte	0x0
-    10a0:	0000                	.2byte	0x0
+    10a0:	0002                	.2byte	0x2
     10a2:	0000                	.2byte	0x0
-    10a4:	0002                	.2byte	0x2
+    10a4:	0001                	.2byte	0x1
     10a6:	0000                	.2byte	0x0
-    10a8:	0001                	.2byte	0x1
+    10a8:	0002                	.2byte	0x2
     10aa:	0000                	.2byte	0x0
     10ac:	0000                	.2byte	0x0
     10ae:	0000                	.2byte	0x0
     10b0:	0001                	.2byte	0x1
     10b2:	0000                	.2byte	0x0
-    10b4:	0001                	.2byte	0x1
+    10b4:	0002                	.2byte	0x2
     10b6:	0000                	.2byte	0x0
-    10b8:	0000                	.2byte	0x0
+    10b8:	0002                	.2byte	0x2
     10ba:	0000                	.2byte	0x0
-    10bc:	0002                	.2byte	0x2
+    10bc:	0001                	.2byte	0x1
     10be:	0000                	.2byte	0x0
-    10c0:	0001                	.2byte	0x1
+    10c0:	0002                	.2byte	0x2
     10c2:	0000                	.2byte	0x0
-    10c4:	0002                	.2byte	0x2
+    10c4:	0001                	.2byte	0x1
     10c6:	0000                	.2byte	0x0
-    10c8:	0000                	.2byte	0x0
+    10c8:	0001                	.2byte	0x1
     10ca:	0000                	.2byte	0x0
-    10cc:	0001                	.2byte	0x1
+    10cc:	0002                	.2byte	0x2
     10ce:	0000                	.2byte	0x0
-    10d0:	0001                	.2byte	0x1
+    10d0:	0000                	.2byte	0x0
     10d2:	0000                	.2byte	0x0
-    10d4:	0000                	.2byte	0x0
+    10d4:	0001                	.2byte	0x1
     10d6:	0000                	.2byte	0x0
-    10d8:	0002                	.2byte	0x2
+    10d8:	0001                	.2byte	0x1
     10da:	0000                	.2byte	0x0
-    10dc:	0002                	.2byte	0x2
+    10dc:	0000                	.2byte	0x0
     10de:	0000                	.2byte	0x0
     10e0:	0000                	.2byte	0x0
     10e2:	0000                	.2byte	0x0
-    10e4:	0002                	.2byte	0x2
+    10e4:	0001                	.2byte	0x1
     10e6:	0000                	.2byte	0x0
-    10e8:	0000                	.2byte	0x0
+    10e8:	0002                	.2byte	0x2
     10ea:	0000                	.2byte	0x0
-    10ec:	0000                	.2byte	0x0
+    10ec:	0002                	.2byte	0x2
     10ee:	0000                	.2byte	0x0
-    10f0:	0000                	.2byte	0x0
+    10f0:	0001                	.2byte	0x1
     10f2:	0000                	.2byte	0x0
-    10f4:	0002                	.2byte	0x2
+    10f4:	0000                	.2byte	0x0
     10f6:	0000                	.2byte	0x0
-    10f8:	0000                	.2byte	0x0
+    10f8:	0002                	.2byte	0x2
     10fa:	0000                	.2byte	0x0
-    10fc:	0001                	.2byte	0x1
+    10fc:	0002                	.2byte	0x2
     10fe:	0000                	.2byte	0x0
-    1100:	0002                	.2byte	0x2
+    1100:	0001                	.2byte	0x1
     1102:	0000                	.2byte	0x0
-    1104:	0001                	.2byte	0x1
+    1104:	0000                	.2byte	0x0
     1106:	0000                	.2byte	0x0
     1108:	0000                	.2byte	0x0
     110a:	0000                	.2byte	0x0
     110c:	0002                	.2byte	0x2
     110e:	0000                	.2byte	0x0
-    1110:	0000                	.2byte	0x0
+    1110:	0001                	.2byte	0x1
     1112:	0000                	.2byte	0x0
-    1114:	0002                	.2byte	0x2
+    1114:	0000                	.2byte	0x0
     1116:	0000                	.2byte	0x0
-    1118:	0001                	.2byte	0x1
+    1118:	0000                	.2byte	0x0
     111a:	0000                	.2byte	0x0
     111c:	0000                	.2byte	0x0
     111e:	0000                	.2byte	0x0
     1120:	0002                	.2byte	0x2
     1122:	0000                	.2byte	0x0
-    1124:	0002                	.2byte	0x2
+    1124:	0001                	.2byte	0x1
     1126:	0000                	.2byte	0x0
-    1128:	0000                	.2byte	0x0
+    1128:	0002                	.2byte	0x2
     112a:	0000                	.2byte	0x0
-    112c:	0001                	.2byte	0x1
+    112c:	0000                	.2byte	0x0
     112e:	0000                	.2byte	0x0
-    1130:	0002                	.2byte	0x2
+    1130:	0001                	.2byte	0x1
     1132:	0000                	.2byte	0x0
-    1134:	0000                	.2byte	0x0
+    1134:	0001                	.2byte	0x1
     1136:	0000                	.2byte	0x0
-    1138:	0001                	.2byte	0x1
+    1138:	0000                	.2byte	0x0
     113a:	0000                	.2byte	0x0
-    113c:	0001                	.2byte	0x1
+    113c:	0002                	.2byte	0x2
     113e:	0000                	.2byte	0x0
-    1140:	0001                	.2byte	0x1
+    1140:	0000                	.2byte	0x0
     1142:	0000                	.2byte	0x0
     1144:	0001                	.2byte	0x1
     1146:	0000                	.2byte	0x0
-    1148:	0001                	.2byte	0x1
+    1148:	0002                	.2byte	0x2
     114a:	0000                	.2byte	0x0
     114c:	0001                	.2byte	0x1
     114e:	0000                	.2byte	0x0
-    1150:	0002                	.2byte	0x2
+    1150:	0000                	.2byte	0x0
     1152:	0000                	.2byte	0x0
-    1154:	0001                	.2byte	0x1
+    1154:	0002                	.2byte	0x2
     1156:	0000                	.2byte	0x0
-    1158:	0001                	.2byte	0x1
+    1158:	0002                	.2byte	0x2
     115a:	0000                	.2byte	0x0
     115c:	0002                	.2byte	0x2
     115e:	0000                	.2byte	0x0
-    1160:	0001                	.2byte	0x1
+    1160:	0000                	.2byte	0x0
     1162:	0000                	.2byte	0x0
-    1164:	0000                	.2byte	0x0
+    1164:	0001                	.2byte	0x1
     1166:	0000                	.2byte	0x0
-    1168:	0000                	.2byte	0x0
+    1168:	0002                	.2byte	0x2
     116a:	0000                	.2byte	0x0
-    116c:	0002                	.2byte	0x2
+    116c:	0000                	.2byte	0x0
     116e:	0000                	.2byte	0x0
-    1170:	0002                	.2byte	0x2
+    1170:	0000                	.2byte	0x0
     1172:	0000                	.2byte	0x0
-    1174:	0001                	.2byte	0x1
+    1174:	0000                	.2byte	0x0
     1176:	0000                	.2byte	0x0
-    1178:	0000                	.2byte	0x0
+    1178:	0001                	.2byte	0x1
     117a:	0000                	.2byte	0x0
-    117c:	0001                	.2byte	0x1
+    117c:	0002                	.2byte	0x2
     117e:	0000                	.2byte	0x0
-    1180:	0000                	.2byte	0x0
+    1180:	0001                	.2byte	0x1
     1182:	0000                	.2byte	0x0
-    1184:	0001                	.2byte	0x1
+    1184:	0002                	.2byte	0x2
     1186:	0000                	.2byte	0x0
-    1188:	0001                	.2byte	0x1
+    1188:	0000                	.2byte	0x0
     118a:	0000                	.2byte	0x0
-    118c:	0001                	.2byte	0x1
+    118c:	0000                	.2byte	0x0
     118e:	0000                	.2byte	0x0
-    1190:	0000                	.2byte	0x0
+    1190:	0002                	.2byte	0x2
     1192:	0000                	.2byte	0x0
-    1194:	0000                	.2byte	0x0
+    1194:	0001                	.2byte	0x1
     1196:	0000                	.2byte	0x0
     1198:	0000                	.2byte	0x0
     119a:	0000                	.2byte	0x0
-    119c:	0002                	.2byte	0x2
+    119c:	0000                	.2byte	0x0
     119e:	0000                	.2byte	0x0
-    11a0:	0002                	.2byte	0x2
+    11a0:	0000                	.2byte	0x0
     11a2:	0000                	.2byte	0x0
-    11a4:	0000                	.2byte	0x0
+    11a4:	0002                	.2byte	0x2
     11a6:	0000                	.2byte	0x0
     11a8:	0002                	.2byte	0x2
     11aa:	0000                	.2byte	0x0
     11ac:	0001                	.2byte	0x1
     11ae:	0000                	.2byte	0x0
-    11b0:	0000                	.2byte	0x0
+    11b0:	0001                	.2byte	0x1
     11b2:	0000                	.2byte	0x0
-    11b4:	0002                	.2byte	0x2
+    11b4:	0001                	.2byte	0x1
     11b6:	0000                	.2byte	0x0
-    11b8:	0002                	.2byte	0x2
+    11b8:	0000                	.2byte	0x0
     11ba:	0000                	.2byte	0x0
-    11bc:	0001                	.2byte	0x1
+    11bc:	0000                	.2byte	0x0
     11be:	0000                	.2byte	0x0
-    11c0:	0002                	.2byte	0x2
+    11c0:	0000                	.2byte	0x0
     11c2:	0000                	.2byte	0x0
-    11c4:	0000                	.2byte	0x0
+    11c4:	0001                	.2byte	0x1
     11c6:	0000                	.2byte	0x0
     11c8:	0001                	.2byte	0x1
     11ca:	0000                	.2byte	0x0
     11cc:	0000                	.2byte	0x0
     11ce:	0000                	.2byte	0x0
-    11d0:	0002                	.2byte	0x2
+    11d0:	0000                	.2byte	0x0
     11d2:	0000                	.2byte	0x0
-    11d4:	0002                	.2byte	0x2
+    11d4:	0000                	.2byte	0x0
     11d6:	0000                	.2byte	0x0
-    11d8:	0000                	.2byte	0x0
+    11d8:	0001                	.2byte	0x1
     11da:	0000                	.2byte	0x0
-    11dc:	0001                	.2byte	0x1
+    11dc:	0000                	.2byte	0x0
     11de:	0000                	.2byte	0x0
-    11e0:	0000                	.2byte	0x0
+    11e0:	0002                	.2byte	0x2
     11e2:	0000                	.2byte	0x0
     11e4:	0001                	.2byte	0x1
     11e6:	0000                	.2byte	0x0
     11e8:	0002                	.2byte	0x2
     11ea:	0000                	.2byte	0x0
-    11ec:	0000                	.2byte	0x0
+    11ec:	0001                	.2byte	0x1
     11ee:	0000                	.2byte	0x0
     11f0:	0000                	.2byte	0x0
     11f2:	0000                	.2byte	0x0
-    11f4:	0002                	.2byte	0x2
+    11f4:	0000                	.2byte	0x0
     11f6:	0000                	.2byte	0x0
-    11f8:	0001                	.2byte	0x1
+    11f8:	0002                	.2byte	0x2
     11fa:	0000                	.2byte	0x0
     11fc:	0002                	.2byte	0x2
     11fe:	0000                	.2byte	0x0
-    1200:	0002                	.2byte	0x2
+    1200:	0000                	.2byte	0x0
     1202:	0000                	.2byte	0x0
-    1204:	0002                	.2byte	0x2
+    1204:	0000                	.2byte	0x0
     1206:	0000                	.2byte	0x0
-    1208:	0001                	.2byte	0x1
+    1208:	0000                	.2byte	0x0
     120a:	0000                	.2byte	0x0
-    120c:	0001                	.2byte	0x1
+    120c:	0000                	.2byte	0x0
     120e:	0000                	.2byte	0x0
-    1210:	0001                	.2byte	0x1
+    1210:	0002                	.2byte	0x2
     1212:	0000                	.2byte	0x0
     1214:	0001                	.2byte	0x1
     1216:	0000                	.2byte	0x0
-    1218:	0000                	.2byte	0x0
+    1218:	0001                	.2byte	0x1
     121a:	0000                	.2byte	0x0
-    121c:	0001                	.2byte	0x1
+    121c:	0002                	.2byte	0x2
     121e:	0000                	.2byte	0x0
-    1220:	0001                	.2byte	0x1
+    1220:	0002                	.2byte	0x2
     1222:	0000                	.2byte	0x0
-    1224:	0001                	.2byte	0x1
+    1224:	0002                	.2byte	0x2
     1226:	0000                	.2byte	0x0
     1228:	0002                	.2byte	0x2
     122a:	0000                	.2byte	0x0
-    122c:	0002                	.2byte	0x2
+    122c:	0001                	.2byte	0x1
     122e:	0000                	.2byte	0x0
-    1230:	0002                	.2byte	0x2
+    1230:	0001                	.2byte	0x1
     1232:	0000                	.2byte	0x0
-    1234:	0002                	.2byte	0x2
+    1234:	0000                	.2byte	0x0
     1236:	0000                	.2byte	0x0
-    1238:	0002                	.2byte	0x2
+    1238:	0000                	.2byte	0x0
     123a:	0000                	.2byte	0x0
     123c:	0000                	.2byte	0x0
     123e:	0000                	.2byte	0x0
     1240:	0000                	.2byte	0x0
     1242:	0000                	.2byte	0x0
-    1244:	0000                	.2byte	0x0
+    1244:	0001                	.2byte	0x1
     1246:	0000                	.2byte	0x0
     1248:	0000                	.2byte	0x0
     124a:	0000                	.2byte	0x0
-    124c:	0000                	.2byte	0x0
+    124c:	0001                	.2byte	0x1
     124e:	0000                	.2byte	0x0
-    1250:	0002                	.2byte	0x2
+    1250:	0001                	.2byte	0x1
     1252:	0000                	.2byte	0x0
-    1254:	0000                	.2byte	0x0
+    1254:	0002                	.2byte	0x2
     1256:	0000                	.2byte	0x0
-    1258:	0002                	.2byte	0x2
+    1258:	0000                	.2byte	0x0
     125a:	0000                	.2byte	0x0
     125c:	0001                	.2byte	0x1
     125e:	0000                	.2byte	0x0
-    1260:	0002                	.2byte	0x2
+    1260:	0001                	.2byte	0x1
     1262:	0000                	.2byte	0x0
     1264:	0000                	.2byte	0x0
     1266:	0000                	.2byte	0x0
-    1268:	0000                	.2byte	0x0
+    1268:	0001                	.2byte	0x1
     126a:	0000                	.2byte	0x0
     126c:	0002                	.2byte	0x2
     126e:	0000                	.2byte	0x0
@@ -1547,47 +1547,47 @@ Disassembly of section .data:
     127a:	0000                	.2byte	0x0
     127c:	0002                	.2byte	0x2
     127e:	0000                	.2byte	0x0
-    1280:	0002                	.2byte	0x2
+    1280:	0000                	.2byte	0x0
     1282:	0000                	.2byte	0x0
     1284:	0001                	.2byte	0x1
     1286:	0000                	.2byte	0x0
     1288:	0000                	.2byte	0x0
     128a:	0000                	.2byte	0x0
-    128c:	0001                	.2byte	0x1
+    128c:	0002                	.2byte	0x2
     128e:	0000                	.2byte	0x0
-    1290:	0001                	.2byte	0x1
+    1290:	0002                	.2byte	0x2
     1292:	0000                	.2byte	0x0
-    1294:	0002                	.2byte	0x2
+    1294:	0000                	.2byte	0x0
     1296:	0000                	.2byte	0x0
-    1298:	0001                	.2byte	0x1
+    1298:	0000                	.2byte	0x0
     129a:	0000                	.2byte	0x0
-    129c:	0002                	.2byte	0x2
+    129c:	0000                	.2byte	0x0
     129e:	0000                	.2byte	0x0
-    12a0:	0002                	.2byte	0x2
+    12a0:	0001                	.2byte	0x1
     12a2:	0000                	.2byte	0x0
-    12a4:	0002                	.2byte	0x2
+    12a4:	0000                	.2byte	0x0
     12a6:	0000                	.2byte	0x0
-    12a8:	0002                	.2byte	0x2
+    12a8:	0000                	.2byte	0x0
     12aa:	0000                	.2byte	0x0
-    12ac:	0001                	.2byte	0x1
+    12ac:	0002                	.2byte	0x2
     12ae:	0000                	.2byte	0x0
     12b0:	0000                	.2byte	0x0
     12b2:	0000                	.2byte	0x0
     12b4:	0002                	.2byte	0x2
     12b6:	0000                	.2byte	0x0
-    12b8:	0002                	.2byte	0x2
+    12b8:	0000                	.2byte	0x0
     12ba:	0000                	.2byte	0x0
     12bc:	0000                	.2byte	0x0
     12be:	0000                	.2byte	0x0
     12c0:	0000                	.2byte	0x0
     12c2:	0000                	.2byte	0x0
-    12c4:	0000                	.2byte	0x0
+    12c4:	0002                	.2byte	0x2
     12c6:	0000                	.2byte	0x0
     12c8:	0000                	.2byte	0x0
     12ca:	0000                	.2byte	0x0
-    12cc:	0002                	.2byte	0x2
+    12cc:	0001                	.2byte	0x1
     12ce:	0000                	.2byte	0x0
-    12d0:	0001                	.2byte	0x1
+    12d0:	0002                	.2byte	0x2
     12d2:	0000                	.2byte	0x0
     12d4:	0000                	.2byte	0x0
     12d6:	0000                	.2byte	0x0
@@ -1595,29 +1595,29 @@ Disassembly of section .data:
     12da:	0000                	.2byte	0x0
     12dc:	0000                	.2byte	0x0
     12de:	0000                	.2byte	0x0
-    12e0:	0001                	.2byte	0x1
+    12e0:	0002                	.2byte	0x2
     12e2:	0000                	.2byte	0x0
-    12e4:	0002                	.2byte	0x2
+    12e4:	0000                	.2byte	0x0
     12e6:	0000                	.2byte	0x0
     12e8:	0000                	.2byte	0x0
     12ea:	0000                	.2byte	0x0
-    12ec:	0001                	.2byte	0x1
+    12ec:	0002                	.2byte	0x2
     12ee:	0000                	.2byte	0x0
-    12f0:	0002                	.2byte	0x2
+    12f0:	0000                	.2byte	0x0
     12f2:	0000                	.2byte	0x0
-    12f4:	0000                	.2byte	0x0
+    12f4:	0002                	.2byte	0x2
     12f6:	0000                	.2byte	0x0
     12f8:	0002                	.2byte	0x2
     12fa:	0000                	.2byte	0x0
-    12fc:	0000                	.2byte	0x0
+    12fc:	0001                	.2byte	0x1
     12fe:	0000                	.2byte	0x0
     1300:	0002                	.2byte	0x2
     1302:	0000                	.2byte	0x0
-    1304:	0002                	.2byte	0x2
+    1304:	0000                	.2byte	0x0
     1306:	0000                	.2byte	0x0
-    1308:	0000                	.2byte	0x0
+    1308:	0002                	.2byte	0x2
     130a:	0000                	.2byte	0x0
-    130c:	0000                	.2byte	0x0
+    130c:	0002                	.2byte	0x2
     130e:	0000                	.2byte	0x0
     1310:	0001                	.2byte	0x1
     1312:	0000                	.2byte	0x0
@@ -1625,625 +1625,619 @@ Disassembly of section .data:
     1316:	0000                	.2byte	0x0
     1318:	0001                	.2byte	0x1
     131a:	0000                	.2byte	0x0
-    131c:	0000                	.2byte	0x0
+    131c:	0002                	.2byte	0x2
     131e:	0000                	.2byte	0x0
-    1320:	0002                	.2byte	0x2
+    1320:	0000                	.2byte	0x0
     1322:	0000                	.2byte	0x0
-    1324:	0001                	.2byte	0x1
+    1324:	0002                	.2byte	0x2
     1326:	0000                	.2byte	0x0
     1328:	0002                	.2byte	0x2
     132a:	0000                	.2byte	0x0
-    132c:	0002                	.2byte	0x2
+    132c:	0000                	.2byte	0x0
     132e:	0000                	.2byte	0x0
-    1330:	0000                	.2byte	0x0
+    1330:	0001                	.2byte	0x1
     1332:	0000                	.2byte	0x0
     1334:	0002                	.2byte	0x2
     1336:	0000                	.2byte	0x0
-    1338:	0000                	.2byte	0x0
+    1338:	0002                	.2byte	0x2
     133a:	0000                	.2byte	0x0
-    133c:	0002                	.2byte	0x2
+    133c:	0001                	.2byte	0x1
     133e:	0000                	.2byte	0x0
     1340:	0000                	.2byte	0x0
     1342:	0000                	.2byte	0x0
-    1344:	0002                	.2byte	0x2
+    1344:	0000                	.2byte	0x0
     1346:	0000                	.2byte	0x0
-    1348:	0000                	.2byte	0x0
+    1348:	0001                	.2byte	0x1
     134a:	0000                	.2byte	0x0
-    134c:	0002                	.2byte	0x2
+    134c:	0000                	.2byte	0x0
     134e:	0000                	.2byte	0x0
-    1350:	0000                	.2byte	0x0
+    1350:	0001                	.2byte	0x1
     1352:	0000                	.2byte	0x0
-    1354:	0001                	.2byte	0x1
+    1354:	0000                	.2byte	0x0
     1356:	0000                	.2byte	0x0
-    1358:	0001                	.2byte	0x1
+    1358:	0002                	.2byte	0x2
     135a:	0000                	.2byte	0x0
-    135c:	0000                	.2byte	0x0
+    135c:	0001                	.2byte	0x1
     135e:	0000                	.2byte	0x0
-    1360:	0000                	.2byte	0x0
+    1360:	0001                	.2byte	0x1
     1362:	0000                	.2byte	0x0
     1364:	0002                	.2byte	0x2
     1366:	0000                	.2byte	0x0
-    1368:	0000                	.2byte	0x0
+    1368:	0002                	.2byte	0x2
     136a:	0000                	.2byte	0x0
     136c:	0002                	.2byte	0x2
     136e:	0000                	.2byte	0x0
-    1370:	0001                	.2byte	0x1
+    1370:	0002                	.2byte	0x2
     1372:	0000                	.2byte	0x0
     1374:	0001                	.2byte	0x1
     1376:	0000                	.2byte	0x0
     1378:	0001                	.2byte	0x1
     137a:	0000                	.2byte	0x0
-    137c:	0000                	.2byte	0x0
+    137c:	0002                	.2byte	0x2
     137e:	0000                	.2byte	0x0
-    1380:	0002                	.2byte	0x2
+    1380:	0000                	.2byte	0x0
     1382:	0000                	.2byte	0x0
-    1384:	0002                	.2byte	0x2
+    1384:	0000                	.2byte	0x0
     1386:	0000                	.2byte	0x0
     1388:	0001                	.2byte	0x1
     138a:	0000                	.2byte	0x0
-    138c:	0002                	.2byte	0x2
+    138c:	0001                	.2byte	0x1
     138e:	0000                	.2byte	0x0
-    1390:	0000                	.2byte	0x0
+    1390:	0001                	.2byte	0x1
     1392:	0000                	.2byte	0x0
     1394:	0001                	.2byte	0x1
     1396:	0000                	.2byte	0x0
     1398:	0001                	.2byte	0x1
     139a:	0000                	.2byte	0x0
-    139c:	0001                	.2byte	0x1
+    139c:	0000                	.2byte	0x0
     139e:	0000                	.2byte	0x0
     13a0:	0002                	.2byte	0x2
     13a2:	0000                	.2byte	0x0
     13a4:	0001                	.2byte	0x1
     13a6:	0000                	.2byte	0x0
-    13a8:	0001                	.2byte	0x1
+    13a8:	0000                	.2byte	0x0
     13aa:	0000                	.2byte	0x0
-    13ac:	0001                	.2byte	0x1
+    13ac:	0002                	.2byte	0x2
     13ae:	0000                	.2byte	0x0
-    13b0:	0001                	.2byte	0x1
+    13b0:	0000                	.2byte	0x0
     13b2:	0000                	.2byte	0x0
-    13b4:	0001                	.2byte	0x1
+    13b4:	0002                	.2byte	0x2
     13b6:	0000                	.2byte	0x0
     13b8:	0001                	.2byte	0x1
     13ba:	0000                	.2byte	0x0
     13bc:	0000                	.2byte	0x0
     13be:	0000                	.2byte	0x0
-    13c0:	0002                	.2byte	0x2
+    13c0:	0001                	.2byte	0x1
     13c2:	0000                	.2byte	0x0
     13c4:	0002                	.2byte	0x2
     13c6:	0000                	.2byte	0x0
     13c8:	0001                	.2byte	0x1
     13ca:	0000                	.2byte	0x0
-    13cc:	0002                	.2byte	0x2
+    13cc:	0000                	.2byte	0x0
     13ce:	0000                	.2byte	0x0
-    13d0:	0001                	.2byte	0x1
+    13d0:	0002                	.2byte	0x2
     13d2:	0000                	.2byte	0x0
-    13d4:	0002                	.2byte	0x2
+    13d4:	0001                	.2byte	0x1
     13d6:	0000                	.2byte	0x0
-    13d8:	0001                	.2byte	0x1
+    13d8:	0002                	.2byte	0x2
     13da:	0000                	.2byte	0x0
     13dc:	0002                	.2byte	0x2
     13de:	0000                	.2byte	0x0
-    13e0:	0002                	.2byte	0x2
+    13e0:	0000                	.2byte	0x0
     13e2:	0000                	.2byte	0x0
     13e4:	0000                	.2byte	0x0
     13e6:	0000                	.2byte	0x0
-    13e8:	0001                	.2byte	0x1
+    13e8:	0000                	.2byte	0x0
     13ea:	0000                	.2byte	0x0
     13ec:	0000                	.2byte	0x0
     13ee:	0000                	.2byte	0x0
-    13f0:	0001                	.2byte	0x1
+    13f0:	0000                	.2byte	0x0
     13f2:	0000                	.2byte	0x0
-    13f4:	0002                	.2byte	0x2
+    13f4:	0001                	.2byte	0x1
     13f6:	0000                	.2byte	0x0
-    13f8:	0002                	.2byte	0x2
+    13f8:	0001                	.2byte	0x1
     13fa:	0000                	.2byte	0x0
-    13fc:	0001                	.2byte	0x1
+    13fc:	0002                	.2byte	0x2
     13fe:	0000                	.2byte	0x0
-    1400:	0002                	.2byte	0x2
+    1400:	0000                	.2byte	0x0
     1402:	0000                	.2byte	0x0
     1404:	0000                	.2byte	0x0
     1406:	0000                	.2byte	0x0
-    1408:	0000                	.2byte	0x0
+    1408:	0002                	.2byte	0x2
     140a:	0000                	.2byte	0x0
-    140c:	0001                	.2byte	0x1
+    140c:	0000                	.2byte	0x0
     140e:	0000                	.2byte	0x0
     1410:	0000                	.2byte	0x0
     1412:	0000                	.2byte	0x0
-    1414:	0002                	.2byte	0x2
+    1414:	0001                	.2byte	0x1
     1416:	0000                	.2byte	0x0
-    1418:	0001                	.2byte	0x1
+    1418:	0000                	.2byte	0x0
     141a:	0000                	.2byte	0x0
-    141c:	0001                	.2byte	0x1
+    141c:	0002                	.2byte	0x2
     141e:	0000                	.2byte	0x0
     1420:	0000                	.2byte	0x0
     1422:	0000                	.2byte	0x0
-    1424:	0000                	.2byte	0x0
+    1424:	0002                	.2byte	0x2
     1426:	0000                	.2byte	0x0
-    1428:	0000                	.2byte	0x0
+    1428:	0002                	.2byte	0x2
     142a:	0000                	.2byte	0x0
-    142c:	0001                	.2byte	0x1
+    142c:	0000                	.2byte	0x0
     142e:	0000                	.2byte	0x0
-    1430:	0001                	.2byte	0x1
+    1430:	0002                	.2byte	0x2
     1432:	0000                	.2byte	0x0
-    1434:	0001                	.2byte	0x1
+    1434:	0002                	.2byte	0x2
     1436:	0000                	.2byte	0x0
     1438:	0000                	.2byte	0x0
     143a:	0000                	.2byte	0x0
-    143c:	0001                	.2byte	0x1
+    143c:	0002                	.2byte	0x2
     143e:	0000                	.2byte	0x0
-    1440:	0002                	.2byte	0x2
+    1440:	0000                	.2byte	0x0
     1442:	0000                	.2byte	0x0
-    1444:	0001                	.2byte	0x1
+    1444:	0002                	.2byte	0x2
     1446:	0000                	.2byte	0x0
     1448:	0000                	.2byte	0x0
     144a:	0000                	.2byte	0x0
-    144c:	0001                	.2byte	0x1
+    144c:	0000                	.2byte	0x0
     144e:	0000                	.2byte	0x0
-    1450:	0000                	.2byte	0x0
+    1450:	0001                	.2byte	0x1
     1452:	0000                	.2byte	0x0
-    1454:	0002                	.2byte	0x2
+    1454:	0001                	.2byte	0x1
     1456:	0000                	.2byte	0x0
-    1458:	0001                	.2byte	0x1
+    1458:	0000                	.2byte	0x0
     145a:	0000                	.2byte	0x0
-    145c:	0000                	.2byte	0x0
+    145c:	0002                	.2byte	0x2
     145e:	0000                	.2byte	0x0
 
 0000000000001460 <verify_data>:
-    1460:	000a                	.2byte	0xa
+    1460:	0011                	.2byte	0x11
     1462:	0000                	.2byte	0x0
-    1464:	000c                	.2byte	0xc
-    1466:	0000                	.2byte	0x0
-    1468:	00000007          	.4byte	0x7
-    146c:	0011                	.2byte	0x11
-    146e:	0000                	.2byte	0x0
-    1470:	000a                	.2byte	0xa
+    1464:	00000013          	nop
+    1468:	0019                	.2byte	0x19
+    146a:	0000                	.2byte	0x0
+    146c:	00000013          	nop
+    1470:	001a                	.2byte	0x1a
     1472:	0000                	.2byte	0x0
-    1474:	000e                	.2byte	0xe
+    1474:	0011                	.2byte	0x11
     1476:	0000                	.2byte	0x0
-    1478:	000d                	.2byte	0xd
+    1478:	0011                	.2byte	0x11
     147a:	0000                	.2byte	0x0
-    147c:	0000000b          	.4byte	0xb
-    1480:	0000000b          	.4byte	0xb
-    1484:	0010                	.2byte	0x10
+    147c:	0000000f          	fence	unknown,unknown
+    1480:	0011                	.2byte	0x11
+    1482:	0000                	.2byte	0x0
+    1484:	0014                	.2byte	0x14
     1486:	0000                	.2byte	0x0
-    1488:	000e                	.2byte	0xe
+    1488:	0010                	.2byte	0x10
     148a:	0000                	.2byte	0x0
-    148c:	000d                	.2byte	0xd
-    148e:	0000                	.2byte	0x0
+    148c:	00000013          	nop
     1490:	0011                	.2byte	0x11
     1492:	0000                	.2byte	0x0
-    1494:	000d                	.2byte	0xd
-    1496:	0000                	.2byte	0x0
-    1498:	0006                	.2byte	0x6
+    1494:	00000013          	nop
+    1498:	0011                	.2byte	0x11
     149a:	0000                	.2byte	0x0
-    149c:	0000000f          	fence	unknown,unknown
-    14a0:	0015                	.2byte	0x15
+    149c:	0014                	.2byte	0x14
+    149e:	0000                	.2byte	0x0
+    14a0:	0016                	.2byte	0x16
     14a2:	0000                	.2byte	0x0
-    14a4:	000d                	.2byte	0xd
+    14a4:	0014                	.2byte	0x14
     14a6:	0000                	.2byte	0x0
-    14a8:	000c                	.2byte	0xc
+    14a8:	0018                	.2byte	0x18
     14aa:	0000                	.2byte	0x0
-    14ac:	0000000f          	fence	unknown,unknown
-    14b0:	0009                	.2byte	0x9
+    14ac:	0018                	.2byte	0x18
+    14ae:	0000                	.2byte	0x0
+    14b0:	0019                	.2byte	0x19
     14b2:	0000                	.2byte	0x0
-    14b4:	0014                	.2byte	0x14
-    14b6:	0000                	.2byte	0x0
-    14b8:	0011                	.2byte	0x11
+    14b4:	00000017          	auipc	zero,0x0
+    14b8:	0012                	.2byte	0x12
     14ba:	0000                	.2byte	0x0
-    14bc:	0011                	.2byte	0x11
+    14bc:	000d                	.2byte	0xd
     14be:	0000                	.2byte	0x0
-    14c0:	0009                	.2byte	0x9
+    14c0:	0018                	.2byte	0x18
     14c2:	0000                	.2byte	0x0
-    14c4:	0012                	.2byte	0x12
-    14c6:	0000                	.2byte	0x0
-    14c8:	00000013          	nop
-    14cc:	0011                	.2byte	0x11
+    14c4:	00000017          	auipc	zero,0x0
+    14c8:	0000000f          	fence	unknown,unknown
+    14cc:	0014                	.2byte	0x14
     14ce:	0000                	.2byte	0x0
-    14d0:	0014                	.2byte	0x14
+    14d0:	0015                	.2byte	0x15
     14d2:	0000                	.2byte	0x0
-    14d4:	00000013          	nop
-    14d8:	000a                	.2byte	0xa
+    14d4:	0016                	.2byte	0x16
+    14d6:	0000                	.2byte	0x0
+    14d8:	0012                	.2byte	0x12
     14da:	0000                	.2byte	0x0
     14dc:	0015                	.2byte	0x15
     14de:	0000                	.2byte	0x0
-    14e0:	0012                	.2byte	0x12
+    14e0:	0011                	.2byte	0x11
     14e2:	0000                	.2byte	0x0
-    14e4:	000a                	.2byte	0xa
-    14e6:	0000                	.2byte	0x0
-    14e8:	0009                	.2byte	0x9
+    14e4:	0000000b          	.4byte	0xb
+    14e8:	0010                	.2byte	0x10
     14ea:	0000                	.2byte	0x0
-    14ec:	00000007          	.4byte	0x7
-    14f0:	0006                	.2byte	0x6
+    14ec:	0014                	.2byte	0x14
+    14ee:	0000                	.2byte	0x0
+    14f0:	000d                	.2byte	0xd
     14f2:	0000                	.2byte	0x0
-    14f4:	000a                	.2byte	0xa
-    14f6:	0000                	.2byte	0x0
-    14f8:	0000000b          	.4byte	0xb
-    14fc:	000c                	.2byte	0xc
+    14f4:	00000013          	nop
+    14f8:	000a                	.2byte	0xa
+    14fa:	0000                	.2byte	0x0
+    14fc:	000d                	.2byte	0xd
     14fe:	0000                	.2byte	0x0
-    1500:	000c                	.2byte	0xc
+    1500:	000d                	.2byte	0xd
     1502:	0000                	.2byte	0x0
     1504:	000e                	.2byte	0xe
     1506:	0000                	.2byte	0x0
-    1508:	0010                	.2byte	0x10
+    1508:	0008                	.2byte	0x8
     150a:	0000                	.2byte	0x0
-    150c:	000e                	.2byte	0xe
+    150c:	000a                	.2byte	0xa
     150e:	0000                	.2byte	0x0
-    1510:	000e                	.2byte	0xe
-    1512:	0000                	.2byte	0x0
-    1514:	000d                	.2byte	0xd
+    1510:	0000000f          	fence	unknown,unknown
+    1514:	0014                	.2byte	0x14
     1516:	0000                	.2byte	0x0
-    1518:	000a                	.2byte	0xa
-    151a:	0000                	.2byte	0x0
-    151c:	000e                	.2byte	0xe
+    1518:	0000000f          	fence	unknown,unknown
+    151c:	0009                	.2byte	0x9
     151e:	0000                	.2byte	0x0
-    1520:	0012                	.2byte	0x12
+    1520:	0019                	.2byte	0x19
     1522:	0000                	.2byte	0x0
-    1524:	0011                	.2byte	0x11
+    1524:	0010                	.2byte	0x10
     1526:	0000                	.2byte	0x0
-    1528:	000a                	.2byte	0xa
+    1528:	0015                	.2byte	0x15
     152a:	0000                	.2byte	0x0
-    152c:	0011                	.2byte	0x11
-    152e:	0000                	.2byte	0x0
-    1530:	0008                	.2byte	0x8
+    152c:	00000017          	auipc	zero,0x0
+    1530:	001a                	.2byte	0x1a
     1532:	0000                	.2byte	0x0
-    1534:	0018                	.2byte	0x18
+    1534:	000c                	.2byte	0xc
     1536:	0000                	.2byte	0x0
-    1538:	0016                	.2byte	0x16
-    153a:	0000                	.2byte	0x0
-    153c:	00000013          	nop
-    1540:	000d                	.2byte	0xd
+    1538:	0000000f          	fence	unknown,unknown
+    153c:	000e                	.2byte	0xe
+    153e:	0000                	.2byte	0x0
+    1540:	0015                	.2byte	0x15
     1542:	0000                	.2byte	0x0
-    1544:	00000017          	auipc	zero,0x0
-    1548:	0014                	.2byte	0x14
+    1544:	0014                	.2byte	0x14
+    1546:	0000                	.2byte	0x0
+    1548:	000d                	.2byte	0xd
     154a:	0000                	.2byte	0x0
-    154c:	00000017          	auipc	zero,0x0
-    1550:	0014                	.2byte	0x14
+    154c:	0011                	.2byte	0x11
+    154e:	0000                	.2byte	0x0
+    1550:	0016                	.2byte	0x16
     1552:	0000                	.2byte	0x0
-    1554:	0016                	.2byte	0x16
+    1554:	000d                	.2byte	0xd
     1556:	0000                	.2byte	0x0
-    1558:	0009                	.2byte	0x9
+    1558:	0012                	.2byte	0x12
     155a:	0000                	.2byte	0x0
     155c:	0016                	.2byte	0x16
     155e:	0000                	.2byte	0x0
-    1560:	000a                	.2byte	0xa
+    1560:	000d                	.2byte	0xd
     1562:	0000                	.2byte	0x0
-    1564:	0008                	.2byte	0x8
+    1564:	0009                	.2byte	0x9
     1566:	0000                	.2byte	0x0
-    1568:	0006                	.2byte	0x6
+    1568:	000d                	.2byte	0xd
     156a:	0000                	.2byte	0x0
-    156c:	0008                	.2byte	0x8
+    156c:	000d                	.2byte	0xd
     156e:	0000                	.2byte	0x0
-    1570:	000a                	.2byte	0xa
-    1572:	0000                	.2byte	0x0
-    1574:	000e                	.2byte	0xe
+    1570:	0000000f          	fence	unknown,unknown
+    1574:	0011                	.2byte	0x11
     1576:	0000                	.2byte	0x0
-    1578:	000c                	.2byte	0xc
+    1578:	0006                	.2byte	0x6
     157a:	0000                	.2byte	0x0
-    157c:	000c                	.2byte	0xc
+    157c:	0006                	.2byte	0x6
     157e:	0000                	.2byte	0x0
-    1580:	0009                	.2byte	0x9
-    1582:	0000                	.2byte	0x0
-    1584:	0012                	.2byte	0x12
+    1580:	0000000b          	.4byte	0xb
+    1584:	000d                	.2byte	0xd
     1586:	0000                	.2byte	0x0
-    1588:	0000000f          	fence	unknown,unknown
-    158c:	0000000f          	fence	unknown,unknown
-    1590:	000a                	.2byte	0xa
+    1588:	000a                	.2byte	0xa
+    158a:	0000                	.2byte	0x0
+    158c:	0008                	.2byte	0x8
+    158e:	0000                	.2byte	0x0
+    1590:	0012                	.2byte	0x12
     1592:	0000                	.2byte	0x0
-    1594:	000d                	.2byte	0xd
-    1596:	0000                	.2byte	0x0
-    1598:	0004                	.2byte	0x4
+    1594:	0000000b          	.4byte	0xb
+    1598:	0011                	.2byte	0x11
     159a:	0000                	.2byte	0x0
-    159c:	0009                	.2byte	0x9
+    159c:	000d                	.2byte	0xd
     159e:	0000                	.2byte	0x0
-    15a0:	0010                	.2byte	0x10
+    15a0:	000a                	.2byte	0xa
     15a2:	0000                	.2byte	0x0
-    15a4:	0000000f          	fence	unknown,unknown
-    15a8:	0009                	.2byte	0x9
+    15a4:	000a                	.2byte	0xa
+    15a6:	0000                	.2byte	0x0
+    15a8:	000c                	.2byte	0xc
     15aa:	0000                	.2byte	0x0
-    15ac:	0014                	.2byte	0x14
+    15ac:	000a                	.2byte	0xa
     15ae:	0000                	.2byte	0x0
     15b0:	000c                	.2byte	0xc
     15b2:	0000                	.2byte	0x0
-    15b4:	00000013          	nop
-    15b8:	0016                	.2byte	0x16
+    15b4:	000a                	.2byte	0xa
+    15b6:	0000                	.2byte	0x0
+    15b8:	000a                	.2byte	0xa
     15ba:	0000                	.2byte	0x0
-    15bc:	000c                	.2byte	0xc
+    15bc:	0008                	.2byte	0x8
     15be:	0000                	.2byte	0x0
-    15c0:	000e                	.2byte	0xe
+    15c0:	000a                	.2byte	0xa
     15c2:	0000                	.2byte	0x0
-    15c4:	0016                	.2byte	0x16
+    15c4:	0008                	.2byte	0x8
     15c6:	0000                	.2byte	0x0
-    15c8:	000c                	.2byte	0xc
+    15c8:	0006                	.2byte	0x6
     15ca:	0000                	.2byte	0x0
-    15cc:	00000017          	auipc	zero,0x0
-    15d0:	00000013          	nop
-    15d4:	0012                	.2byte	0x12
+    15cc:	0008                	.2byte	0x8
+    15ce:	0000                	.2byte	0x0
+    15d0:	0008                	.2byte	0x8
+    15d2:	0000                	.2byte	0x0
+    15d4:	000c                	.2byte	0xc
     15d6:	0000                	.2byte	0x0
-    15d8:	0010                	.2byte	0x10
-    15da:	0000                	.2byte	0x0
-    15dc:	0014                	.2byte	0x14
+    15d8:	0000000b          	.4byte	0xb
+    15dc:	0009                	.2byte	0x9
     15de:	0000                	.2byte	0x0
-    15e0:	00000017          	auipc	zero,0x0
-    15e4:	0000000f          	fence	unknown,unknown
-    15e8:	000c                	.2byte	0xc
+    15e0:	00000013          	nop
+    15e4:	0005                	.2byte	0x5
+    15e6:	0000                	.2byte	0x0
+    15e8:	000d                	.2byte	0xd
     15ea:	0000                	.2byte	0x0
-    15ec:	00000013          	nop
-    15f0:	000d                	.2byte	0xd
+    15ec:	00000017          	auipc	zero,0x0
+    15f0:	0011                	.2byte	0x11
     15f2:	0000                	.2byte	0x0
-    15f4:	0012                	.2byte	0x12
+    15f4:	0010                	.2byte	0x10
     15f6:	0000                	.2byte	0x0
-    15f8:	0011                	.2byte	0x11
+    15f8:	0009                	.2byte	0x9
     15fa:	0000                	.2byte	0x0
-    15fc:	000d                	.2byte	0xd
-    15fe:	0000                	.2byte	0x0
-    1600:	000e                	.2byte	0xe
+    15fc:	0000000b          	.4byte	0xb
+    1600:	0014                	.2byte	0x14
     1602:	0000                	.2byte	0x0
-    1604:	00000013          	nop
-    1608:	0011                	.2byte	0x11
+    1604:	0000000f          	fence	unknown,unknown
+    1608:	000a                	.2byte	0xa
     160a:	0000                	.2byte	0x0
-    160c:	0011                	.2byte	0x11
+    160c:	000c                	.2byte	0xc
     160e:	0000                	.2byte	0x0
-    1610:	0014                	.2byte	0x14
-    1612:	0000                	.2byte	0x0
-    1614:	0010                	.2byte	0x10
+    1610:	00000017          	auipc	zero,0x0
+    1614:	000d                	.2byte	0xd
     1616:	0000                	.2byte	0x0
-    1618:	0000000f          	fence	unknown,unknown
-    161c:	00000013          	nop
-    1620:	000d                	.2byte	0xd
-    1622:	0000                	.2byte	0x0
-    1624:	0014                	.2byte	0x14
+    1618:	00000013          	nop
+    161c:	000e                	.2byte	0xe
+    161e:	0000                	.2byte	0x0
+    1620:	0000000f          	fence	unknown,unknown
+    1624:	000a                	.2byte	0xa
     1626:	0000                	.2byte	0x0
-    1628:	0006                	.2byte	0x6
+    1628:	000d                	.2byte	0xd
     162a:	0000                	.2byte	0x0
-    162c:	0010                	.2byte	0x10
-    162e:	0000                	.2byte	0x0
-    1630:	000c                	.2byte	0xc
+    162c:	0000000f          	fence	unknown,unknown
+    1630:	0012                	.2byte	0x12
     1632:	0000                	.2byte	0x0
-    1634:	0012                	.2byte	0x12
-    1636:	0000                	.2byte	0x0
-    1638:	0014                	.2byte	0x14
+    1634:	0000000f          	fence	unknown,unknown
+    1638:	000d                	.2byte	0xd
     163a:	0000                	.2byte	0x0
-    163c:	000e                	.2byte	0xe
+    163c:	0008                	.2byte	0x8
     163e:	0000                	.2byte	0x0
-    1640:	00000007          	.4byte	0x7
-    1644:	0015                	.2byte	0x15
+    1640:	000e                	.2byte	0xe
+    1642:	0000                	.2byte	0x0
+    1644:	0011                	.2byte	0x11
     1646:	0000                	.2byte	0x0
-    1648:	000e                	.2byte	0xe
+    1648:	000c                	.2byte	0xc
     164a:	0000                	.2byte	0x0
-    164c:	001a                	.2byte	0x1a
+    164c:	000d                	.2byte	0xd
     164e:	0000                	.2byte	0x0
     1650:	0000000f          	fence	unknown,unknown
-    1654:	0016                	.2byte	0x16
+    1654:	000c                	.2byte	0xc
     1656:	0000                	.2byte	0x0
-    1658:	000c                	.2byte	0xc
+    1658:	000a                	.2byte	0xa
     165a:	0000                	.2byte	0x0
-    165c:	0012                	.2byte	0x12
+    165c:	000a                	.2byte	0xa
     165e:	0000                	.2byte	0x0
-    1660:	0012                	.2byte	0x12
+    1660:	0014                	.2byte	0x14
     1662:	0000                	.2byte	0x0
     1664:	0000000b          	.4byte	0xb
-    1668:	000c                	.2byte	0xc
-    166a:	0000                	.2byte	0x0
-    166c:	0000000f          	fence	unknown,unknown
-    1670:	000c                	.2byte	0xc
+    1668:	00000013          	nop
+    166c:	0014                	.2byte	0x14
+    166e:	0000                	.2byte	0x0
+    1670:	0011                	.2byte	0x11
     1672:	0000                	.2byte	0x0
-    1674:	0019                	.2byte	0x19
+    1674:	0012                	.2byte	0x12
     1676:	0000                	.2byte	0x0
-    1678:	0018                	.2byte	0x18
+    1678:	0009                	.2byte	0x9
     167a:	0000                	.2byte	0x0
-    167c:	00000013          	nop
-    1680:	0011                	.2byte	0x11
-    1682:	0000                	.2byte	0x0
-    1684:	0018                	.2byte	0x18
+    167c:	0000000f          	fence	unknown,unknown
+    1680:	0000000f          	fence	unknown,unknown
+    1684:	000e                	.2byte	0xe
     1686:	0000                	.2byte	0x0
-    1688:	0014                	.2byte	0x14
-    168a:	0000                	.2byte	0x0
-    168c:	0000001b          	sext.w	zero,zero
-    1690:	0014                	.2byte	0x14
+    1688:	0000000b          	.4byte	0xb
+    168c:	0011                	.2byte	0x11
+    168e:	0000                	.2byte	0x0
+    1690:	0012                	.2byte	0x12
     1692:	0000                	.2byte	0x0
-    1694:	0018                	.2byte	0x18
-    1696:	0000                	.2byte	0x0
-    1698:	0000000b          	.4byte	0xb
-    169c:	0016                	.2byte	0x16
+    1694:	00000013          	nop
+    1698:	000d                	.2byte	0xd
+    169a:	0000                	.2byte	0x0
+    169c:	000e                	.2byte	0xe
     169e:	0000                	.2byte	0x0
-    16a0:	0011                	.2byte	0x11
+    16a0:	0009                	.2byte	0x9
     16a2:	0000                	.2byte	0x0
-    16a4:	0014                	.2byte	0x14
+    16a4:	0008                	.2byte	0x8
     16a6:	0000                	.2byte	0x0
-    16a8:	00000007          	.4byte	0x7
-    16ac:	0000000b          	.4byte	0xb
-    16b0:	0008                	.2byte	0x8
+    16a8:	0010                	.2byte	0x10
+    16aa:	0000                	.2byte	0x0
+    16ac:	000c                	.2byte	0xc
+    16ae:	0000                	.2byte	0x0
+    16b0:	000d                	.2byte	0xd
     16b2:	0000                	.2byte	0x0
-    16b4:	000d                	.2byte	0xd
-    16b6:	0000                	.2byte	0x0
-    16b8:	0011                	.2byte	0x11
-    16ba:	0000                	.2byte	0x0
-    16bc:	000a                	.2byte	0xa
+    16b4:	0000000f          	fence	unknown,unknown
+    16b8:	0000000b          	.4byte	0xb
+    16bc:	000d                	.2byte	0xd
     16be:	0000                	.2byte	0x0
-    16c0:	0009                	.2byte	0x9
+    16c0:	000d                	.2byte	0xd
     16c2:	0000                	.2byte	0x0
-    16c4:	0012                	.2byte	0x12
+    16c4:	0009                	.2byte	0x9
     16c6:	0000                	.2byte	0x0
-    16c8:	000d                	.2byte	0xd
-    16ca:	0000                	.2byte	0x0
-    16cc:	0016                	.2byte	0x16
+    16c8:	00000007          	.4byte	0x7
+    16cc:	0012                	.2byte	0x12
     16ce:	0000                	.2byte	0x0
-    16d0:	0009                	.2byte	0x9
+    16d0:	000e                	.2byte	0xe
     16d2:	0000                	.2byte	0x0
-    16d4:	0010                	.2byte	0x10
+    16d4:	000e                	.2byte	0xe
     16d6:	0000                	.2byte	0x0
-    16d8:	000c                	.2byte	0xc
+    16d8:	0009                	.2byte	0x9
     16da:	0000                	.2byte	0x0
-    16dc:	000c                	.2byte	0xc
+    16dc:	0010                	.2byte	0x10
     16de:	0000                	.2byte	0x0
-    16e0:	0010                	.2byte	0x10
+    16e0:	0014                	.2byte	0x14
     16e2:	0000                	.2byte	0x0
-    16e4:	000e                	.2byte	0xe
+    16e4:	0012                	.2byte	0x12
     16e6:	0000                	.2byte	0x0
-    16e8:	000a                	.2byte	0xa
+    16e8:	0019                	.2byte	0x19
     16ea:	0000                	.2byte	0x0
-    16ec:	000e                	.2byte	0xe
-    16ee:	0000                	.2byte	0x0
-    16f0:	0008                	.2byte	0x8
-    16f2:	0000                	.2byte	0x0
-    16f4:	00000013          	nop
-    16f8:	0012                	.2byte	0x12
+    16ec:	0000001b          	sext.w	zero,zero
+    16f0:	00000017          	auipc	zero,0x0
+    16f4:	0014                	.2byte	0x14
+    16f6:	0000                	.2byte	0x0
+    16f8:	0015                	.2byte	0x15
     16fa:	0000                	.2byte	0x0
-    16fc:	0000000f          	fence	unknown,unknown
-    1700:	0000000b          	.4byte	0xb
-    1704:	0010                	.2byte	0x10
+    16fc:	00000013          	nop
+    1700:	00000017          	auipc	zero,0x0
+    1704:	0015                	.2byte	0x15
     1706:	0000                	.2byte	0x0
-    1708:	0011                	.2byte	0x11
+    1708:	000e                	.2byte	0xe
     170a:	0000                	.2byte	0x0
-    170c:	0012                	.2byte	0x12
+    170c:	0014                	.2byte	0x14
     170e:	0000                	.2byte	0x0
-    1710:	0000000f          	fence	unknown,unknown
-    1714:	0011                	.2byte	0x11
+    1710:	0015                	.2byte	0x15
+    1712:	0000                	.2byte	0x0
+    1714:	0015                	.2byte	0x15
     1716:	0000                	.2byte	0x0
-    1718:	00000007          	.4byte	0x7
-    171c:	00000013          	nop
-    1720:	0016                	.2byte	0x16
+    1718:	00000013          	nop
+    171c:	0018                	.2byte	0x18
+    171e:	0000                	.2byte	0x0
+    1720:	0010                	.2byte	0x10
     1722:	0000                	.2byte	0x0
     1724:	000c                	.2byte	0xc
     1726:	0000                	.2byte	0x0
-    1728:	0000000b          	.4byte	0xb
-    172c:	000a                	.2byte	0xa
-    172e:	0000                	.2byte	0x0
-    1730:	000e                	.2byte	0xe
+    1728:	0012                	.2byte	0x12
+    172a:	0000                	.2byte	0x0
+    172c:	00000013          	nop
+    1730:	0011                	.2byte	0x11
     1732:	0000                	.2byte	0x0
-    1734:	0000000f          	fence	unknown,unknown
-    1738:	0014                	.2byte	0x14
-    173a:	0000                	.2byte	0x0
-    173c:	000a                	.2byte	0xa
+    1734:	000e                	.2byte	0xe
+    1736:	0000                	.2byte	0x0
+    1738:	0000000b          	.4byte	0xb
+    173c:	000c                	.2byte	0xc
     173e:	0000                	.2byte	0x0
-    1740:	000c                	.2byte	0xc
+    1740:	0014                	.2byte	0x14
     1742:	0000                	.2byte	0x0
-    1744:	0014                	.2byte	0x14
+    1744:	000c                	.2byte	0xc
     1746:	0000                	.2byte	0x0
-    1748:	0010                	.2byte	0x10
+    1748:	0009                	.2byte	0x9
     174a:	0000                	.2byte	0x0
-    174c:	001a                	.2byte	0x1a
+    174c:	000c                	.2byte	0xc
     174e:	0000                	.2byte	0x0
-    1750:	000d                	.2byte	0xd
+    1750:	0010                	.2byte	0x10
     1752:	0000                	.2byte	0x0
-    1754:	00000017          	auipc	zero,0x0
-    1758:	000c                	.2byte	0xc
+    1754:	0011                	.2byte	0x11
+    1756:	0000                	.2byte	0x0
+    1758:	0015                	.2byte	0x15
     175a:	0000                	.2byte	0x0
-    175c:	0000000f          	fence	unknown,unknown
-    1760:	0012                	.2byte	0x12
+    175c:	000d                	.2byte	0xd
+    175e:	0000                	.2byte	0x0
+    1760:	0015                	.2byte	0x15
     1762:	0000                	.2byte	0x0
-    1764:	000e                	.2byte	0xe
-    1766:	0000                	.2byte	0x0
-    1768:	000c                	.2byte	0xc
+    1764:	0000000f          	fence	unknown,unknown
+    1768:	0014                	.2byte	0x14
     176a:	0000                	.2byte	0x0
-    176c:	000e                	.2byte	0xe
+    176c:	0016                	.2byte	0x16
     176e:	0000                	.2byte	0x0
-    1770:	0000000b          	.4byte	0xb
+    1770:	0016                	.2byte	0x16
+    1772:	0000                	.2byte	0x0
     1774:	0010                	.2byte	0x10
     1776:	0000                	.2byte	0x0
-    1778:	0011                	.2byte	0x11
+    1778:	0010                	.2byte	0x10
     177a:	0000                	.2byte	0x0
-    177c:	0010                	.2byte	0x10
-    177e:	0000                	.2byte	0x0
+    177c:	0000000f          	fence	unknown,unknown
     1780:	0010                	.2byte	0x10
     1782:	0000                	.2byte	0x0
-    1784:	0016                	.2byte	0x16
+    1784:	0012                	.2byte	0x12
     1786:	0000                	.2byte	0x0
-    1788:	0018                	.2byte	0x18
+    1788:	000d                	.2byte	0xd
     178a:	0000                	.2byte	0x0
-    178c:	0012                	.2byte	0x12
-    178e:	0000                	.2byte	0x0
-    1790:	0011                	.2byte	0x11
+    178c:	0000000f          	fence	unknown,unknown
+    1790:	0010                	.2byte	0x10
     1792:	0000                	.2byte	0x0
-    1794:	0010                	.2byte	0x10
+    1794:	0014                	.2byte	0x14
     1796:	0000                	.2byte	0x0
-    1798:	0009                	.2byte	0x9
+    1798:	0012                	.2byte	0x12
     179a:	0000                	.2byte	0x0
-    179c:	0011                	.2byte	0x11
+    179c:	0010                	.2byte	0x10
     179e:	0000                	.2byte	0x0
-    17a0:	0015                	.2byte	0x15
-    17a2:	0000                	.2byte	0x0
-    17a4:	0010                	.2byte	0x10
+    17a0:	0000000f          	fence	unknown,unknown
+    17a4:	000d                	.2byte	0xd
     17a6:	0000                	.2byte	0x0
-    17a8:	0010                	.2byte	0x10
+    17a8:	0018                	.2byte	0x18
     17aa:	0000                	.2byte	0x0
     17ac:	0015                	.2byte	0x15
     17ae:	0000                	.2byte	0x0
-    17b0:	0000000b          	.4byte	0xb
-    17b4:	0019                	.2byte	0x19
-    17b6:	0000                	.2byte	0x0
-    17b8:	0016                	.2byte	0x16
-    17ba:	0000                	.2byte	0x0
-    17bc:	0014                	.2byte	0x14
-    17be:	0000                	.2byte	0x0
-    17c0:	0012                	.2byte	0x12
-    17c2:	0000                	.2byte	0x0
-    17c4:	0000001b          	sext.w	zero,zero
-    17c8:	00000017          	auipc	zero,0x0
-    17cc:	001a                	.2byte	0x1a
+    17b0:	00000017          	auipc	zero,0x0
+    17b4:	00000013          	nop
+    17b8:	00000013          	nop
+    17bc:	0000000f          	fence	unknown,unknown
+    17c0:	00000017          	auipc	zero,0x0
+    17c4:	0012                	.2byte	0x12
+    17c6:	0000                	.2byte	0x0
+    17c8:	000d                	.2byte	0xd
+    17ca:	0000                	.2byte	0x0
+    17cc:	0016                	.2byte	0x16
     17ce:	0000                	.2byte	0x0
-    17d0:	00000017          	auipc	zero,0x0
-    17d4:	0015                	.2byte	0x15
-    17d6:	0000                	.2byte	0x0
-    17d8:	000d                	.2byte	0xd
-    17da:	0000                	.2byte	0x0
-    17dc:	001a                	.2byte	0x1a
+    17d0:	0016                	.2byte	0x16
+    17d2:	0000                	.2byte	0x0
+    17d4:	00000013          	nop
+    17d8:	00000013          	nop
+    17dc:	0019                	.2byte	0x19
     17de:	0000                	.2byte	0x0
-    17e0:	0000000f          	fence	unknown,unknown
-    17e4:	000c                	.2byte	0xc
+    17e0:	0000000b          	.4byte	0xb
+    17e4:	0009                	.2byte	0x9
     17e6:	0000                	.2byte	0x0
     17e8:	000a                	.2byte	0xa
     17ea:	0000                	.2byte	0x0
-    17ec:	000d                	.2byte	0xd
+    17ec:	000a                	.2byte	0xa
     17ee:	0000                	.2byte	0x0
-    17f0:	0008                	.2byte	0x8
+    17f0:	0009                	.2byte	0x9
     17f2:	0000                	.2byte	0x0
-    17f4:	0012                	.2byte	0x12
-    17f6:	0000                	.2byte	0x0
-    17f8:	0012                	.2byte	0x12
+    17f4:	00000003          	lb	zero,0(zero) # 0 <_start>
+    17f8:	0006                	.2byte	0x6
     17fa:	0000                	.2byte	0x0
-    17fc:	000e                	.2byte	0xe
+    17fc:	0008                	.2byte	0x8
     17fe:	0000                	.2byte	0x0
-    1800:	000e                	.2byte	0xe
+    1800:	0008                	.2byte	0x8
     1802:	0000                	.2byte	0x0
-    1804:	0012                	.2byte	0x12
-    1806:	0000                	.2byte	0x0
-    1808:	0000000b          	.4byte	0xb
-    180c:	0015                	.2byte	0x15
+    1804:	00000007          	.4byte	0x7
+    1808:	0005                	.2byte	0x5
+    180a:	0000                	.2byte	0x0
+    180c:	0004                	.2byte	0x4
     180e:	0000                	.2byte	0x0
-    1810:	0010                	.2byte	0x10
+    1810:	000a                	.2byte	0xa
     1812:	0000                	.2byte	0x0
-    1814:	0000000f          	fence	unknown,unknown
+    1814:	00000003          	lb	zero,0(zero) # 0 <_start>
     1818:	000d                	.2byte	0xd
     181a:	0000                	.2byte	0x0
-    181c:	0011                	.2byte	0x11
-    181e:	0000                	.2byte	0x0
-    1820:	000c                	.2byte	0xc
+    181c:	0000000b          	.4byte	0xb
+    1820:	0011                	.2byte	0x11
     1822:	0000                	.2byte	0x0
-    1824:	0005                	.2byte	0x5
-    1826:	0000                	.2byte	0x0
-    1828:	0008                	.2byte	0x8
+    1824:	0000000f          	fence	unknown,unknown
+    1828:	0014                	.2byte	0x14
     182a:	0000                	.2byte	0x0
-    182c:	00000007          	.4byte	0x7
-    1830:	0008                	.2byte	0x8
+    182c:	000c                	.2byte	0xc
+    182e:	0000                	.2byte	0x0
+    1830:	0012                	.2byte	0x12
     1832:	0000                	.2byte	0x0
-    1834:	0000000b          	.4byte	0xb
-    1838:	0000000b          	.4byte	0xb
-    183c:	000a                	.2byte	0xa
-    183e:	0000                	.2byte	0x0
-    1840:	0000000b          	.4byte	0xb
-    1844:	000c                	.2byte	0xc
+    1834:	000e                	.2byte	0xe
+    1836:	0000                	.2byte	0x0
+    1838:	000a                	.2byte	0xa
+    183a:	0000                	.2byte	0x0
+    183c:	0000000b          	.4byte	0xb
+    1840:	0011                	.2byte	0x11
+    1842:	0000                	.2byte	0x0
+    1844:	000d                	.2byte	0xd
     1846:	0000                	.2byte	0x0
     1848:	000c                	.2byte	0xc
     184a:	0000                	.2byte	0x0
-    184c:	0000000f          	fence	unknown,unknown
-    1850:	000d                	.2byte	0xd
+    184c:	000c                	.2byte	0xc
+    184e:	0000                	.2byte	0x0
+    1850:	0014                	.2byte	0x14
     1852:	0000                	.2byte	0x0
-    1854:	000e                	.2byte	0xe
+    1854:	000d                	.2byte	0xd
     1856:	0000                	.2byte	0x0
-    1858:	0008                	.2byte	0x8
+    1858:	0012                	.2byte	0x12
     185a:	0000                	.2byte	0x0
-    185c:	000d                	.2byte	0xd
+    185c:	000e                	.2byte	0xe
     185e:	0000                	.2byte	0x0
     1860:	0101                	.2byte	0x101
     1862:	0101                	.2byte	0x101
