@@ -132,4 +132,19 @@ class CPUConfig
     }
   }
 
+  def getL1Cache(latency: Int): CacheMemory = {
+    memType match {
+      case "combinational"     => new CacheMemory(32, 4, 0)
+      case "non-combinational" => new CacheMemory(32, 4, latency)
+      case _ => throw new IllegalArgumentException("Must specify known backing memory type")
+    }
+  }
+
+  def getL2Cache(latency: Int): CacheMemory = {
+    memType match {
+      case "combinational"     => new CacheMemory(128, 4, 0)
+      case "non-combinational" => new CacheMemory(128, 4, latency)
+      case _ => throw new IllegalArgumentException("Must specify known backing memory type")
+    }
+  }
 }
