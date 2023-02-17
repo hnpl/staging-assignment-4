@@ -36,28 +36,29 @@ class CombinMemoryTestHarness(size: Int, memFile: String) extends Module {
   })
   io := DontCare
 
-  val imem = Module(new ICombinMemPort)
+  val imem = Module(new ICombinMemBridge)
 
-  val dmem = Module(new DCombinMemPort)
+  val dmem = Module(new DCombinMemBridge)
   val memory = Module(new DualPortedCombinMemory (size, memFile))
   memory.io := DontCare
 
 
-  imem.io.pipeline.address     := io.imem_address
-  imem.io.pipeline.valid       := io.imem_valid
-  io.imem_instruction := imem.io.pipeline.instruction
-  io.imem_good        := imem.io.pipeline.good
-  dmem.io.pipeline.address     := io.dmem_address
-  dmem.io.pipeline.valid       := io.dmem_valid
-  dmem.io.pipeline.writedata   := io.dmem_writedata
-  dmem.io.pipeline.memread     := io.dmem_memread
-  dmem.io.pipeline.memwrite    := io.dmem_memwrite
-  dmem.io.pipeline.maskmode    := io.dmem_maskmode
-  dmem.io.pipeline.sext        := io.dmem_sext
-  io.dmem_readdata    := dmem.io.pipeline.readdata
-  io.dmem_good        := dmem.io.pipeline.good
+  imem.io.cpu_side_io.address     := io.imem_address
+  imem.io.cpu_side_io.valid       := io.imem_valid
+  io.imem_instruction := imem.io.cpu_side_io.instruction
+  io.imem_good        := imem.io.cpu_side_io.good
+  dmem.io.cpu_side_io.address     := io.dmem_address
+  dmem.io.cpu_side_io.valid       := io.dmem_valid
+  dmem.io.cpu_side_io.writedata   := io.dmem_writedata
+  dmem.io.cpu_side_io.memread     := io.dmem_memread
+  dmem.io.cpu_side_io.memwrite    := io.dmem_memwrite
+  dmem.io.cpu_side_io.maskmode    := io.dmem_maskmode
+  dmem.io.cpu_side_io.sext        := io.dmem_sext
+  io.dmem_readdata    := dmem.io.cpu_side_io.readdata
+  io.dmem_good        := dmem.io.cpu_side_io.good
 
-  memory.wireMemory (imem, dmem)
+  memory.wireToInstBridge (imem)
+  memory.wireToDataBridge (dmem)
 }
 
 

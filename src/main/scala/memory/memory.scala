@@ -22,11 +22,11 @@ class DualPortedCombinMemory(size: Int, memfile: String) extends BaseDualPortedM
 
   // Instruction port
 
-  wireMemPipe(io.imem)
+  wireMemPipe(io.inst_io)
 
-  when (io.imem.request.valid) {
+  when (io.inst_io.request.valid) {
     // Put the Request into the instruction pipe and signal that instruction memory is busy
-    val request = io.imem.request.bits
+    val request = io.inst_io.request.bits
 
     // We should only be expecting a read from instruction memory
     assert(request.operation === Read)
@@ -35,25 +35,27 @@ class DualPortedCombinMemory(size: Int, memfile: String) extends BaseDualPortedM
     // TODO: Revert this back to the assert form "assert (request.address < size.U)"
     // TODO: once CSR is integrated into CPU
     when (request.address < size.U) {
-      io.imem.response.valid := true.B
+      io.inst_io.response.valid := true.B
       val baseAddress = (request.address >> 3.U) << 1.U
-      io.imem.response.bits.data := Cat(memory(baseAddress + 1.U), memory(baseAddress))
+      io.inst_io.response.bits.data := Cat(memory(baseAddress + 1.U), memory(baseAddress))
+      io.inst_io.response.bits.dirty := false.B
+      io.inst_io.response.bits.age := 0.U
     } .otherwise {
-      io.imem.response.valid := false.B
+      io.inst_io.response.valid := false.B
     }
   } .otherwise {
-    io.imem.response.valid := false.B
+    io.inst_io.response.valid := false.B
   }
 
   // Data port
 
-  wireMemPipe(io.dmem)
+  wireMemPipe(io.data_io)
 
-  val memAddress = io.dmem.request.bits.address
-  val memWriteData = io.dmem.request.bits.writedata
+  val memAddress = io.data_io.request.bits.address
+  val memWriteData = io.data_io.request.bits.writedata
 
-  when (io.dmem.request.valid) {
-    val request = io.dmem.request.bits
+  when (io.data_io.request.valid) {
+    val request = io.data_io.request.bits
 
     // Check that non-combin write isn't being used
     assert (request.operation =/= Write)
@@ -62,15 +64,19 @@ class DualPortedCombinMemory(size: Int, memfile: String) extends BaseDualPortedM
 
     // Read path
     val baseAddress = memAddress >> 2.U
-    io.dmem.response.bits.data := Cat(memory(baseAddress + 1.U), memory(baseAddress))
-    io.dmem.response.valid := true.B
+    io.data_io.response.bits.data := Cat(memory(baseAddress + 1.U), memory(baseAddress))
+    io.data_io.response.bits.dirty := false.B
+    io.data_io.response.bits.age := 0.U
+    io.data_io.response.valid := true.B
 
     // Write path
     when (request.operation === ReadWrite) {
       memory(memAddress >> 2) := memWriteData(31, 0)
       memory((memAddress >> 2) + 1.U) := memWriteData(63, 32)
     }
+    .otherwise {
+    }
   } .otherwise {
-    io.dmem.response.valid := false.B
+    io.data_io.response.valid := false.B
   }
 }
