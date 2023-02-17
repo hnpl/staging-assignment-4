@@ -68,6 +68,50 @@ class HazardUnitNonCombin extends Module {
   io.mem_wb_stall := false.B
   io.mem_wb_flush := false.B
 
-  // Your code goes here
+  // Holding the Fetch stage till we get an instruction
+  when (!io.imem_good) {
+    io.if_id_flush := true.B
+    io.pcstall := true.B
+  }
 
+  // Jumps and Branches
+  // There are at least three ways of doing this,
+  // Way 1: Stalling the IF, ID, EX, and MEM stages until imem responses.
+  // Way 2: We can flush IF, ID, and EX stages and stall the MEM stage until we get the imem's response, too.
+  // Way 3: Adding a state register deciding whether the pipeline will be flushed so that the Jump/Branch can be committed without waiting for imem.
+  when (io.exmem_taken) {
+    io.pcfromtaken  := true.B
+    io.pcstall      := false.B
+    io.id_ex_flush  := true.B
+    io.if_id_flush  := true.B
+    when (!io.imem_good) {
+      io.ex_mem_stall := true.B
+      io.mem_wb_stall := true.B
+    }
+    .otherwise {
+      io.ex_mem_flush := true.B
+      io.mem_wb_stall := false.B
+    }
+  }
+
+  // Load to use hazard.
+  when (io.idex_memread && io.idex_rd =/= 0.U &&
+        (io.idex_rd === io.rs1 || io.idex_rd === io.rs2)) {
+    io.pcfromtaken := false.B
+    io.pcstall     := true.B
+    io.if_id_stall := true.B
+    io.id_ex_flush := true.B
+  }
+
+  when (io.exmem_meminst & (io.dmem_good =/= 1.U)) {
+    io.pcstall      := true.B
+    io.ex_mem_stall := true.B
+    io.ex_mem_flush := false.B
+    io.mem_wb_stall := true.B
+    io.mem_wb_flush := false.B
+    io.if_id_stall  := true.B
+    io.if_id_flush  := false.B
+    io.id_ex_stall  := true.B
+    io.id_ex_flush  := false.B
+  }
 }
