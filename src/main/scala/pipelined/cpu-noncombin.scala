@@ -18,6 +18,7 @@ class PipelinedNonCombinCPU(implicit val conf: CPUConfig) extends BaseCPU {
   class IFIDBundle extends Bundle {
     val instruction = UInt(32.W)
     val pc          = UInt(64.W)
+    val valid_inst = Bool()
   }
 
   // Control signals used in EX stage
@@ -46,6 +47,7 @@ class PipelinedNonCombinCPU(implicit val conf: CPUConfig) extends BaseCPU {
     val sextImm     = UInt(64.W)
     val readdata1   = UInt(64.W)
     val readdata2   = UInt(64.W)
+    val valid_inst = Bool()
   }
 
   // Control block of the IDEX register
@@ -64,6 +66,7 @@ class PipelinedNonCombinCPU(implicit val conf: CPUConfig) extends BaseCPU {
     val taken         = Bool()
     val instruction   = UInt(32.W)
     val pc            = UInt(64.W)
+    val valid_inst = Bool()
   }
 
   // Control block of the EXMEM register
@@ -79,6 +82,7 @@ class PipelinedNonCombinCPU(implicit val conf: CPUConfig) extends BaseCPU {
     val mem_readdata = UInt(64.W) // data acquired from a load inst
     val instruction  = UInt(32.W) // to figure out destination reg
     val pc           = UInt(64.W)
+    val valid_inst = Bool()
   }
 
   // Control block of the MEMWB register
@@ -161,6 +165,7 @@ class PipelinedNonCombinCPU(implicit val conf: CPUConfig) extends BaseCPU {
   if_id.io.valid := ~hazard.io.if_id_stall
   if_id.io.flush := hazard.io.if_id_flush
 
+  if_id.io.in.valid_inst := io.imem.good
 
   /////////////////////////////////////////////////////////////////////////////
   // ID STAGE
@@ -209,6 +214,7 @@ class PipelinedNonCombinCPU(implicit val conf: CPUConfig) extends BaseCPU {
   id_ex_ctrl.io.valid := ~hazard.io.id_ex_stall
   id_ex_ctrl.io.flush := hazard.io.id_ex_flush
 
+  id_ex.io.in.valid_inst := if_id.io.data.valid_inst
 
   /////////////////////////////////////////////////////////////////////////////
   // EX STAGE
@@ -295,6 +301,8 @@ class PipelinedNonCombinCPU(implicit val conf: CPUConfig) extends BaseCPU {
   ex_mem.io.in.alu_result := alu.io.result
   ex_mem.io.in.sextImm := id_ex.io.data.sextImm
 
+  ex_mem.io.in.valid_inst := id_ex.io.data.valid_inst
+
   ex_mem.io.in.pc := id_ex.io.data.pc
 
   // Set the control signals on the ex_mem pipeline register (Part III and/or Part IV)
@@ -338,6 +346,8 @@ class PipelinedNonCombinCPU(implicit val conf: CPUConfig) extends BaseCPU {
   mem_wb_ctrl.io.in.wb_ctrl.writeback_valid := ex_mem_ctrl.io.data.wb_ctrl.writeback_valid
   mem_wb_ctrl.io.in.wb_ctrl.writeback_src   := ex_mem_ctrl.io.data.wb_ctrl.writeback_src
 
+  mem_wb.io.in.valid_inst := ex_mem.io.data.valid_inst
+
   mem_wb.io.in.pc := ex_mem.io.data.pc
 
   // Set the control signals on the mem_wb pipeline register
@@ -367,6 +377,11 @@ class PipelinedNonCombinCPU(implicit val conf: CPUConfig) extends BaseCPU {
   ))
   registers.io.writedata := wb_writedata
   // Set the input signals for the forwarding unit (SKIP FOR PART I)
+  
+  when (mem_wb.io.data.valid_inst) {
+    printf(p"0x${Hexadecimal(mem_wb.io.data.pc)}\n")
+  }
+
 }
 
 /*
