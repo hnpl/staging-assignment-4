@@ -92,6 +92,7 @@ class PipelinedNonCombinCPU(implicit val conf: CPUConfig) extends BaseCPU {
 
   // All of the structures required
   val pc              = RegInit(0.U(64.W))
+  val fetch_pc        = RegInit(0.U(64.W))
   val control         = Module(new Control())
   val registers       = Module(new RegisterFile())
   val aluControl      = Module(new ALUControl())
@@ -123,8 +124,10 @@ class PipelinedNonCombinCPU(implicit val conf: CPUConfig) extends BaseCPU {
   // From memory back to fetch. Since we don't decide whether to take a branch or not until the memory stage.
   val next_pc = Wire(UInt(64.W))
 
-  //printf(p"pc=${Hexadecimal(pc)} [${Hexadecimal(if_id.io.data.instruction)} | ${Hexadecimal(id_ex.io.data.instruction)} | ${Hexadecimal(ex_mem.io.data.instruction)} | ${Hexadecimal(mem_wb.io.data.instruction)}]\n")
   //printf(p"${cycleCount} pc=${Hexadecimal(pc)} [${Hexadecimal(if_id.io.data.pc)} | ${Hexadecimal(id_ex.io.data.pc)} | ${Hexadecimal(ex_mem.io.data.pc)} | ${Hexadecimal(mem_wb.io.data.pc)}]\n")
+  when (mem_wb.io.data.valid_inst) {
+    //printf(p"0x${Hexadecimal(mem_wb.io.data.pc)}\n")
+  }
 
   /////////////////////////////////////////////////////////////////////////////
   // FETCH STAGE
@@ -148,7 +151,11 @@ class PipelinedNonCombinCPU(implicit val conf: CPUConfig) extends BaseCPU {
   io.imem.valid   := true.B
 
   hazard.io.imem_ready := io.imem.ready
-  hazard.io.imem_good := io.imem.good
+  hazard.io.imem_good := io.imem.good & ((!ex_mem.io.data.taken) | ((ex_mem.io.data.taken) & (next_pc === fetch_pc)))
+
+  when (io.imem.ready & io.imem.valid) {
+    fetch_pc := pc
+  }
 
   //printf(p"imem.valid: ${io.imem.valid} imem.good:  ${io.imem.good}\n")
   //printf(p"dmem.valid: ${io.dmem.valid} dmem.good:  ${io.dmem.good}\n")
@@ -378,10 +385,6 @@ class PipelinedNonCombinCPU(implicit val conf: CPUConfig) extends BaseCPU {
   registers.io.writedata := wb_writedata
   // Set the input signals for the forwarding unit (SKIP FOR PART I)
   
-  when (mem_wb.io.data.valid_inst) {
-    printf(p"0x${Hexadecimal(mem_wb.io.data.pc)}\n")
-  }
-
 }
 
 /*
