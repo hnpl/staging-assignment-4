@@ -83,8 +83,8 @@ class HazardUnitNonCombin extends Module {
   // |    2 |      0 |      0 |      1 |      0 | pcstall |stall|stall|stall|-----| // because the dmem is busy, we have to discard the correct instruction and retry fetching it ...
   // |    3 |      0 |      1 |      0 |      0 | pcstall |stall|flush|-----|-----|
   // |    4 |      0 |      1 |      1 |      0 | pcstall |stall|stall|stall|-----|
-  // |    5 |      1 |      0 |      0 |      0 | takenpc |flush|flush|-----|-----| // move the branch/jump to WB, the takenpc is valid
-  // |    6 |      1 |      1 |      0 |      0 | takenpc |flush|flush|-----|-----| // same as above
+  // |    5 |      1 |      0 |      0 |      0 | takenpc |flush|flush|flush|-----| // move the branch/jump to WB, the takenpc is valid
+  // |    6 |      1 |      1 |      0 |      0 | takenpc |flush|flush|flush|-----| // same as above
   // Not have new instruction in IF
   // |    7 |      0 |      0 |      0 |      1 | pcstall |flush|-----|-----|-----|
   // |    8 |      0 |      0 |      1 |      1 | pcstall |stall|stall|stall|-----|
@@ -107,6 +107,7 @@ class HazardUnitNonCombin extends Module {
     io.if_id_stall := true.B
     io.id_ex_stall := true.B
     io.ex_mem_stall := true.B
+    io.mem_wb_flush := true.B
   } .elsewhen (cond2) { // !(cond3) & cond2 // case 3, 9
     io.pcstall := true.B
     io.if_id_stall := true.B
@@ -116,6 +117,7 @@ class HazardUnitNonCombin extends Module {
     io.if_id_flush := true.B
     io.id_ex_flush := true.B
     io.ex_mem_stall := cond4 // differentiate case 5/6 and case 11/12
+    io.mem_wb_flush := cond4
   } .otherwise { // case 7
     io.pcstall := true.B
     io.if_id_flush := true.B
