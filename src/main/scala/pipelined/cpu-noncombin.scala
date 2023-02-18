@@ -120,7 +120,7 @@ class PipelinedNonCombinCPU(implicit val conf: CPUConfig) extends BaseCPU {
   val next_pc = Wire(UInt(64.W))
 
   //printf(p"pc=${Hexadecimal(pc)} [${Hexadecimal(if_id.io.data.instruction)} | ${Hexadecimal(id_ex.io.data.instruction)} | ${Hexadecimal(ex_mem.io.data.instruction)} | ${Hexadecimal(mem_wb.io.data.instruction)}]\n")
-  //printf(p"pc=${Hexadecimal(pc)} [${Hexadecimal(if_id.io.data.pc)} | ${Hexadecimal(id_ex.io.data.pc)} | ${Hexadecimal(ex_mem.io.data.pc)} | ${Hexadecimal(mem_wb.io.data.pc)}]\n")
+  //printf(p"${cycleCount} pc=${Hexadecimal(pc)} [${Hexadecimal(if_id.io.data.pc)} | ${Hexadecimal(id_ex.io.data.pc)} | ${Hexadecimal(ex_mem.io.data.pc)} | ${Hexadecimal(mem_wb.io.data.pc)}]\n")
 
   /////////////////////////////////////////////////////////////////////////////
   // FETCH STAGE
@@ -221,7 +221,7 @@ class PipelinedNonCombinCPU(implicit val conf: CPUConfig) extends BaseCPU {
   val ex_rd  = id_ex.io.data.instruction(11, 7)
 
   // Set the inputs to the hazard detection unit from this stage (SKIP FOR PART I)
-  hazard.io.idex_memread := id_ex_ctrl.io.data.mem_ctrl.memop === 2.U
+  hazard.io.idex_memread := id_ex_ctrl.io.data.mem_ctrl.memop === 1.U
   hazard.io.idex_rd      := ex_rd
 
   // Set the input to the forwarding unit from this stage (SKIP FOR PART I)
