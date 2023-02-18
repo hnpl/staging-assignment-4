@@ -18,7 +18,7 @@ import dinocpu.test._
   * }}}
   */
 class SmallTestsTesterLab4 extends CPUFlatSpec {
-  behavior of "Dual-issue Pipelined CPU"
+  behavior of "Non-Combinational Pipelined CPU"
   for ((group, tests) <- InstTests.tests) {
     for (test <- tests) {
       it should s"run $group ${test.binary}${test.extraName}" in {
@@ -30,7 +30,7 @@ class SmallTestsTesterLab4 extends CPUFlatSpec {
 }
 
 class FullApplicationsTesterLab4 extends CPUFlatSpec {
-  behavior of "Dual-issue Pipelined CPU"
+  behavior of "Non-Combinational Pipelined CPU"
   for (test <- InstTests.fullApplications) {
     it should s"run full application ${test.binary}${test.extraName}" in {
       CPUTesterDriver(test, "pipelined-non-combin", "",

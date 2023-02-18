@@ -12,7 +12,7 @@ class Top(val conf: CPUConfig) extends Module
   io.success := DontCare
 
   val cpu  = Module(conf.getCPU())
-  val l1_cache = Module(conf.getL1Cache(1))
+  //val l1_cache = Module(conf.getL1Cache(1))
   val mem  = Module(conf.getNewMem())
 
   val inst_bridge = Module(conf.getIMemBridge())
@@ -24,8 +24,8 @@ class Top(val conf: CPUConfig) extends Module
   cpu.io.dmem <> data_bridge.io.cpu_side_io
 
   // no cache
-  l1_cache.notUsingInstCache()
-  l1_cache.notUsingDataCache()
+  //l1_cache.notUsingInstCache()
+  //l1_cache.notUsingDataCache()
   mem.wireToInstBridge(inst_bridge)
   mem.wireToDataBridge(data_bridge)
 
