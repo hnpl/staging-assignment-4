@@ -113,8 +113,8 @@ class HazardUnitNonCombin extends Module {
     io.if_id_stall := true.B
     io.id_ex_flush := true.B
   } .elsewhen (cond1) { // case 5, 6, 11, 12
-    io.pcfromtaken := true.B
-    io.if_id_flush := true.B
+    io.pcfromtaken := cond4
+    io.if_id_flush := cond4
     io.id_ex_flush := true.B
     io.ex_mem_stall := cond4 // differentiate case 5/6 and case 11/12
     io.mem_wb_flush := cond4

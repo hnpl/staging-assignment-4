@@ -23,6 +23,8 @@ class SingleCycleCPU(implicit val conf: CPUConfig) extends BaseCPU {
   val controlTransfer = Module(new ControlTransferUnit())
   val (cycleCount, _) = Counter(true.B, 1 << 30)
 
+  printf(p"0x${Hexadecimal(pc)}\n")
+
   //FETCH
   io.imem.address := pc
   io.imem.valid := true.B

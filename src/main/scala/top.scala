@@ -26,8 +26,8 @@ class Top(val conf: CPUConfig) extends Module
   // no cache
   //l1_cache.notUsingInstCache()
   //l1_cache.notUsingDataCache()
-  mem.wireToInstBridge(inst_bridge)
-  mem.wireToDataBridge(data_bridge)
+  //mem.wireToInstBridge(inst_bridge)
+  //mem.wireToDataBridge(data_bridge)
 
   // inst cache only
   //l1_cache.wireToInstBridge(inst_bridge)

@@ -125,9 +125,9 @@ class PipelinedNonCombinCPU(implicit val conf: CPUConfig) extends BaseCPU {
   val next_pc = Wire(UInt(64.W))
 
   //printf(p"${cycleCount} pc=${Hexadecimal(pc)} [${Hexadecimal(if_id.io.data.pc)} | ${Hexadecimal(id_ex.io.data.pc)} | ${Hexadecimal(ex_mem.io.data.pc)} | ${Hexadecimal(mem_wb.io.data.pc)}]\n")
-  when (mem_wb.io.data.valid_inst) {
-    //printf(p"0x${Hexadecimal(mem_wb.io.data.pc)}\n")
-  }
+  //when (mem_wb.io.data.valid_inst) {
+  //  printf(p"0x${Hexadecimal(mem_wb.io.data.pc)}\n")
+  //}
 
   /////////////////////////////////////////////////////////////////////////////
   // FETCH STAGE
