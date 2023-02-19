@@ -13,8 +13,9 @@ import chisel3._
  * Input:  idex_rd, the register number of the destination register for the instruction in the ID/EX register
  * Input:  exmem_taken, if true, then we are using the nextpc in the EX/MEM register, *not* pc+4.
  * Input:  exmem_meminst, if true, the instruction at MEM stage is a memory instruction.
- * Input:  imem_ready, if true, then the Instruction Memory is ready for another instruction 
- * Input:  imem_good, if true, then an instruction was successfully retrieved and can unstall CPU
+ * Input:  imem_ready, if true, then the Instruction Memory is ready for another instruction
+ * Input:  imem_good, if true, then the **correct** instruction was successfully retrieved
+ *                    i.e., if this signal is true, the fetched instruction can safely enter the pipeline
  * Input:  dmem_good, if true, then can unstall CPU for data memory
  *
  * Output: pcfromtaken, if true, use the pc from MEM
