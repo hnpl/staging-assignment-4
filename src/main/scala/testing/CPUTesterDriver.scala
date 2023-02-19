@@ -19,7 +19,8 @@ class CPUTesterDriver(cpuType: String,
                       extraName: String = "",
                       memType: String,
                       memPortType: String,
-                      latency: Int = 0) {
+                      latency: Int = 0,
+                      systemName: String = "default") {
 
   val optionsManager = new SimulatorOptionsManager()
 
@@ -35,6 +36,7 @@ class CPUTesterDriver(cpuType: String,
   conf.memType     = memType
   conf.memPortType = memPortType
   conf.memLatency  = latency
+  conf.systemName  = systemName
 
   if (!branchPredictor.isEmpty) {
     conf.branchPredictor = branchPredictor

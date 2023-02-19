@@ -36,7 +36,10 @@ class CPUConfig
   /** The backing memory type */
   var memType = "combinational"
 
+  var systemName = "default"
+
   def printConfig(): Unit = {
+    println(s"System name: ${systemName}")
     println(s"CPU Type: ${cpuType}")
     println(s"Branch predictor: ${branchPredictor}")
     println(s"Memory file: ${memFile}")
@@ -61,6 +64,10 @@ class CPUConfig
       case "pipelined-dual-issue" => new PipelinedDualIssueCPU
       case _ => throw new IllegalArgumentException("Must specify known CPU model")
     }
+  }
+
+  def getSystemName(): String = {
+    systemName
   }
 
   def getBranchPredictor: BaseBranchPredictor = {
@@ -140,11 +147,8 @@ class CPUConfig
     }
   }
 
-  def getL2Cache(latency: Int): CacheMemory = {
-    memType match {
-      case "combinational"     => new CacheMemory(128, 4, 0)
-      case "non-combinational" => new CacheMemory(128, 4, latency)
-      case _ => throw new IllegalArgumentException("Must specify known backing memory type")
-    }
+  def getEmptyCache(): CacheMemory = {
+    null
   }
+
 }
